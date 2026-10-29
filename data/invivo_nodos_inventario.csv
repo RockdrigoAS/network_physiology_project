@@ -1,0 +1,47 @@
+sistema,nodo_proceso_o_modulo,menciones,n_plantas
+cardiovascular,presion arterial,32,9
+cardiovascular,integridad miocardica,6,1
+digestivo,integridad mucosa gastrica,46,13
+digestivo,motilidad gastrointestinal,22,7
+digestivo,secrecion acida gastrica,18,4
+endocrino,eje corticotropo,3,2
+endocrino,eje tirotropo,2,1
+hematologico,eritropoyesis,51,14
+hematologico,coagulacion / plaquetas,4,3
+hepatobiliar,integridad hepatocelular,97,32
+hepatobiliar,colestasis / flujo biliar,77,25
+hepatobiliar,sintesis hepatica,61,26
+inmune,respuesta inflamatoria,151,37
+inmune,respuesta inflamatoria (edema),61,27
+inmune,actividad inmune / serie blanca,57,21
+integrador,balance energetico / peso,56,37
+integrador,trofismo de organo,28,15
+integrador,supervivencia (contexto),23,11
+integrador,apetito / ingesta,6,4
+metabolico,manejo lipidico,167,33
+metabolico,glucemia,123,48
+metabolico,glucemia / eje pancreatico,34,21
+metabolico,transporte ionico (ATPasas),14,2
+metabolico,sensibilidad a insulina,10,7
+metabolico,señales metabolicas,5,4
+metabolico,termorregulacion / fiebre,3,1
+multi,integridad tisular (histopatologia),59,38
+neuro-conductual,nocicepcion,65,21
+neuro-conductual,ansiedad,25,7
+neuro-conductual,afecto / depresion,15,9
+neuro-conductual,ansiedad / locomocion,11,9
+neuro-conductual,neurotransmision central,11,4
+neuro-conductual,coordinacion motora,3,3
+neuro-conductual,cognicion,2,1
+neuro-conductual,umbral convulsivo,2,1
+redox,estres oxidativo tisular,331,55
+renal,filtracion glomerular,72,23
+renal,manejo de urato,13,10
+renal,excrecion de agua,4,3
+renal,funcion de barrera glomerular,2,2
+renal,excrecion de sodio,1,1
+reproductivo,espermatogenesis,30,6
+reproductivo,eje gonadotropo,8,5
+tisular,crecimiento tumoral,39,13
+tisular,fibrosis / matriz,5,3
+tisular,cicatrizacion / epitelizacion,4,3

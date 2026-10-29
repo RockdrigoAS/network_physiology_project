@@ -1,0 +1,9 @@
+origen,destino,signo,tier,tipo,nivel_ruta,mecanismo,estado
+estres oxidativo hepatico,integridad hepatocelular,-,2,P-P,2,CRUCE bloque01; dano oxidativo -> lesion hepatocelular,propuesta-auditar
+respuesta inflamatoria aguda,integridad hepatocelular,-,2,P-P,2,TNF/NF-kB -> injuria hepatocelular,propuesta-auditar
+integridad hepatocelular,sintesis hepatica,+,2,P-P,2,hepatocito integro -> capacidad de sintesis,propuesta-auditar
+integridad hepatocelular,colestasis / flujo biliar,-,3,P-P,2,lesion puede cursar con colestasis; auditar,propuesta-auditar
+biotransformacion fase I/II,estres oxidativo hepatico,-,3,P-P,2,fase II (GST) baja estado oxidativo; nodo compartido,propuesta-auditar
+Cortisol,sintesis hepatica,+,3,S-P,3,hipotesis endobiogenica; cortisol modula metabolismo hepatico; auditar,propuesta-auditar
+Insulina,manejo lipidico,-,1,S-P,1,insulina reduce lipogenesis->VLDL (cruce metabolico),propuesta-auditar
+colagogo/coleresis(entrada),manejo lipidico,-,2,P-P,2,RUTA: hipolipemiante POR drenaje hepatobiliar (Cynara); nivel 2 emuntorial,propuesta-auditar

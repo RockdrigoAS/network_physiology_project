@@ -1,0 +1,25 @@
+origen,destino,signo,tier,tipo,nivel_ruta,mecanismo,estado
+KEAP1,Nrf2,-,1,S-S,1,secuestro/degradacion de Nrf2,propuesta-auditar
+Nrf2,SOD,+,1,S-S,1,induccion ARE,propuesta-auditar
+Nrf2,catalasa,+,1,S-S,1,induccion ARE,propuesta-auditar
+Nrf2,GPx,+,1,S-S,1,induccion ARE,propuesta-auditar
+Nrf2,GST,+,1,S-S,1,induccion ARE (fase II),propuesta-auditar
+Nrf2,HO-1,+,1,S-S,1,induccion ARE,propuesta-auditar
+Nrf2,GSH,+,1,S-S,1,induccion GCL -> sintesis GSH,propuesta-auditar
+SOD,ROS,-,1,S-S,1,dismutacion,propuesta-auditar
+catalasa,ROS,-,1,S-S,1,descomposicion H2O2,propuesta-auditar
+GPx,ROS,-,1,S-S,1,reduccion de peroxidos,propuesta-auditar
+GSH,ROS,-,1,S-S,1,neutralizacion directa,propuesta-auditar
+GR,GSH,+,1,S-S,1,regeneracion GSH,propuesta-auditar
+ROS,MDA/TBARS,+,1,S-S,1,peroxidacion lipidica,propuesta-auditar
+ROS,carbonilos proteicos,+,1,S-S,1,oxidacion proteica,propuesta-auditar
+SOD,estres oxidativo hepatico,-,1,S-P,1,capacidad antioxidante baja el estado,propuesta-auditar
+catalasa,estres oxidativo hepatico,-,1,S-P,1,idem,propuesta-auditar
+GPx,estres oxidativo hepatico,-,1,S-P,1,idem,propuesta-auditar
+GSH,estres oxidativo hepatico,-,1,S-P,1,idem,propuesta-auditar
+MDA/TBARS,estres oxidativo hepatico,+,1,S-P,1,marcador de daño sube el estado,propuesta-auditar
+carbonilos proteicos,estres oxidativo hepatico,+,1,S-P,1,idem,propuesta-auditar
+estres oxidativo hepatico,integridad hepatocelular,-,2,P-P,2,estres oxidativo deteriora integridad (co-medicion MDA/ALT),propuesta-auditar
+estres oxidativo renal,filtracion glomerular,-,2,P-P,2,dano oxidativo renal deteriora filtracion,propuesta-auditar
+estres oxidativo cerebral,afecto / depresion,-,3,P-P,2,hipotesis; auditar,propuesta-auditar
+NO/nitritos,respuesta inflamatoria aguda,+,2,S-P,1,via iNOS,propuesta-auditar

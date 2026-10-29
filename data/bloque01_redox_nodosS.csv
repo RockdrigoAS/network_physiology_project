@@ -1,0 +1,14 @@
+nodo_S,estrato,tipo,rol,nota
+KEAP1,S,actividad,sensor,secuestra/degrada Nrf2
+Nrf2,S,actividad,sensor,induce respuesta antioxidante (ARE)
+SOD,S,capacidad,efector,dismuta O2.- -> H2O2
+catalasa,S,capacidad,efector,H2O2 -> H2O
+GPx,S,capacidad,efector,reduce peroxidos via GSH
+GSH,S,capacidad,sustrato-redox,tripeptido; par redox GSH/GSSG
+GST,S,capacidad,efector,conjugacion fase II (COMPARTIDO con biotransformacion hepatica)
+GR,S,capacidad,efector,regenera GSH desde GSSG
+HO-1,S,capacidad,efector,"hemo-oxigenasa, inducible por Nrf2"
+ROS,S,flujo,daño-driver,especies reactivas de oxigeno
+MDA/TBARS,S,flujo,daño,peroxidacion lipidica
+carbonilos proteicos,S,flujo,daño,oxidacion proteica
+NO/nitritos,S,flujo,daño/señal,interfase con iNOS (inflamacion)

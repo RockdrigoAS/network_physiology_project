@@ -1,0 +1,30 @@
+nodo_P,sistema,tipo,nivel_evidencia,"canales_marcadores(S, no nodos)",nota
+glucemia,metabolico,estado,core,"glucosa, HbA1c",regulador S medido: insulina
+sensibilidad a insulina,metabolico,capacidad,sec,"HOMA, captacion de glucosa",
+manejo lipidico,metabolico,estado,core,"colesterol T/HDL/LDL, trigliceridos",
+balance energetico / peso,integrador,estado,core,"peso corporal, ganancia",
+termorregulacion,metabolico,estado,sec,temperatura corporal,ligado a inflamacion/fiebre
+respuesta inflamatoria aguda,inmune,estado,core,"TNF-a, IL-1/6/10, IFN-g, NF-kB, COX, iNOS, edema, PCR",
+actividad inmune celular,inmune,capacidad,core,"leucocitos, linfocitos, NK, fagocitosis, Ig",
+integridad hepatocelular,hepatobiliar,estado,core,"AST, ALT, LDH",BLOQUE 02
+colestasis / flujo biliar,hepatobiliar,flujo,core,"ALP, GGT, bilirrubina",BLOQUE 02
+sintesis hepatica,hepatobiliar,capacidad,core,"albumina, globulina, proteina total",BLOQUE 02
+filtracion glomerular,renal,flujo,core,"creatinina, urea/BUN",
+manejo de urato,renal,flujo,core,acido urico (xantina oxidasa como frente S),
+integridad mucosa gastrica,digestivo,estado,core,"indice de ulcera, area de lesion",
+secrecion acida gastrica,digestivo,flujo,sec,"pH jugo gastrico, volumen, acidez",
+motilidad gastrointestinal,digestivo,flujo,sec,"transito, vaciamiento, carbon activado",
+digestion de carbohidratos,digestivo,capacidad,sec,"a-amilasa, a-glucosidasa (frente S in vitro)",entra a glucemia
+eritropoyesis,hematologico,estado,core,"Hb, hematocrito, eritrocitos, indices",
+coagulacion / plaquetas,hematologico,capacidad,sec,"plaquetas, TP, aPTT, trombina, fibrinogeno",
+presion arterial,cardiovascular,estado,core,"PAS, PAD, PAM",
+tono vascular,cardiovascular,estado,sec,vasorrelajacion anillo aortico (frente S in vitro: ECA),
+nocicepcion,neuro-conductual,estado,core,"contorsiones, lamido, latencia termica",
+ansiedad,neuro-conductual,estado,sec,"brazos abiertos (EPM), campo abierto",
+afecto / depresion,neuro-conductual,estado,sec,inmovilidad (nado forzado),
+umbral convulsivo,neuro-conductual,estado,sec,latencia a convulsion (PTZ),
+crecimiento tumoral,tisular,estado,core,volumen/peso tumoral,OUT la citotoxicidad in vitro de linea celular
+cicatrizacion / epitelizacion,tisular,flujo,sec,"cierre de herida, epitelizacion",
+fibrosis / matriz,tisular,estado,sec,"colageno, hidroxiprolina",
+espermatogenesis,reproductivo,estado,sec,conteo y motilidad espermatica,
+"estres oxidativo [tisular, por compartimento]",redox,estado,core,-> BLOQUE 01 (desglosado),nodo general: se separa por tejido

@@ -1,0 +1,54 @@
+nodo,modulo,clase,readout_eje,subrol,multimembresia,notas
+CRH,corticotropo,hormona_hipotalamica,corticotropo,central,,
+POMC,corticotropo,precursor,,,,proteólisis -> ACTH/aMSH/b-endorfina/lipotropinas
+ACTH,corticotropo,hormona_hipofisaria,corticotropo,central,,
+alfa-MSH,corticotropo,peptido,,,,
+beta-endorfina,corticotropo,peptido,,,,
+Lipotropinas,corticotropo,peptido,,,,
+Cortisol,corticotropo,hormona_periferica,corticotropo,periferico,,
+DHEA,corticotropo,hormona_periferica,corticotropo,periferico,,
+Angiotensinogeno,corticotropo,sustrato,,,,
+Renina,corticotropo,enzima,,,,§5.5 enzima-nodo
+Angiotensina I,corticotropo,intermediario,,,,
+Angiotensina II,corticotropo,peptido_efector,corticotropo,periferico,,2do loop / RAAS
+Aldosterona,corticotropo,hormona_periferica,corticotropo,periferico,,2do loop
+ECA,corticotropo,enzima,,,,§5.5 enzima-nodo
+11b-HSD2,corticotropo,enzima,,,,aristas a P pendientes
+TRH,tirotropo,hormona_hipotalamica,tirotropo,central,prolactina; SNA-central(bSigma),multi-membresia
+TSH,tirotropo,hormona_hipofisaria,tirotropo,central,,
+T4,tirotropo,hormona_periferica,tirotropo,periferico,,
+T3,tirotropo,hormona_periferica,tirotropo,periferico,,
+rT3,tirotropo,metabolito,,,,ruta inactivadora
+D1,tirotropo,enzima,,,,deiodinasa
+D2,tirotropo,enzima,,,,deiodinasa
+D3,tirotropo,enzima,,,,deiodinasa
+GHRH,somatotropo,hormona_hipotalamica,somatotropo,central,,
+Somatostatina,somatotropo,hormona,somatotropo,central,pancreatico,multi-membresia
+GH,somatotropo,hormona_hipofisaria,somatotropo,central,,
+IGF-1,somatotropo,factor_periferico,somatotropo,periferico,,
+Ghrelina,somatotropo,hormona,,,pancreatico,multi-membresia
+Glucosa serica,pancreatico,sustrato,pancreatico,periferico,,handoff la etiqueta 'cross 2B' pero es entidad S (concentracion)
+Insulina,pancreatico,hormona,pancreatico,periferico,,
+Glucagon,pancreatico,hormona,pancreatico,periferico,,
+GLP-1,pancreatico,hormona_incretina,,,,
+GIP,pancreatico,hormona_incretina,,,,
+Amilina,pancreatico,hormona,,,,
+Carga proteica,pancreatico,sustrato,,,,nodo de entrada
+Prolactina,prolactina,hormona_hipofisaria,prolactina,,somatotropo(§5.6),1er loop inhibitorio (dopamina)
+GnRH,gonadotropo,hormona_hipotalamica,gonadotropo,central,,
+LH,gonadotropo,hormona_hipofisaria,gonadotropo,central,,
+FSH,gonadotropo,hormona_hipofisaria,gonadotropo,central,,
+Inhibina,gonadotropo,hormona,,,,
+Activina,gonadotropo,hormona,,,,
+Testosterona,gonadotropo,hormona_periferica,gonadotropo,periferico,,
+Estradiol,gonadotropo,hormona_periferica,gonadotropo,periferico,,
+Progesterona,gonadotropo,hormona_periferica,gonadotropo,periferico,,
+DHT,gonadotropo,hormona_periferica,,,,
+5a-reductasa,gonadotropo,enzima,,,,§5.5 enzima-nodo
+Aromatasa,gonadotropo,enzima,,,,§5.5 enzima-nodo
+Androstenediona,gonadotropo,intermediario,,,,EMBEBIDA (no nodo pleno)
+Acetilcolina,SNA,neurotransmisor,SNA,,,piSigma
+Noradrenalina,SNA,neurotransmisor,SNA,,,alfa/beta Sigma
+Adrenalina,SNA,neurohormona,SNA,,,betaSigma
+Dopamina,SNA,neurotransmisor,SNA,central,prolactina,multi; alfaSigma central + PIF
+Serotonina,SNA,neurotransmisor,SNA,central,(referida),AMBIGUO: citada como multi-membresia (piSigma central) pero NO enumerada como nodo en ningun modulo del §7 -> confirmar con Rodrigo

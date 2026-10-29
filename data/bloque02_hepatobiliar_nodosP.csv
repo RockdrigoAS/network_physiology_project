@@ -1,0 +1,7 @@
+nodo_P,sistema,tipo,nivel_evidencia,canales_marcadores
+integridad hepatocelular,hepatobiliar,estado,core,"AST, ALT, LDH (fuga por lesion)"
+colestasis / flujo biliar,hepatobiliar,flujo,core,"ALP, GGT, bilirrubina"
+sintesis hepatica,hepatobiliar,capacidad,core,"albumina, globulina, proteina total, (TP coagulacion)"
+secrecion biliar (coleresis),hepatobiliar,flujo,sec,flujo/volumen biliar (poco medido en corpus)
+vaciamiento vesicular (colagogo),hepatobiliar,flujo,sec,contractilidad vesicular
+biotransformacion fase I/II,hepatobiliar,capacidad,sec,"CYPs (fase I), GST/UGT (fase II; COMPARTIDO con redox)"

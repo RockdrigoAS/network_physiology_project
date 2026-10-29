@@ -1,0 +1,9 @@
+nodo_P,sistema,compartimento,nivel_evidencia,canales
+estres oxidativo hepatico,redox,hepatico,core,capacidad(SOD/CAT/GPx/GSH) vs daño(MDA/carbonilos)
+estres oxidativo renal,redox,renal,core,"idem, compartimento renal"
+estres oxidativo cerebral,redox,cerebral,sec,idem
+estres oxidativo cardiaco,redox,cardiaco,sec,idem
+estres oxidativo gastrico,redox,gastrico,sec,ligado a mucosa gastrica
+estres oxidativo pancreatico,redox,pancreatico,sec,ligado a diabetes/islote
+estres oxidativo testicular,redox,testicular,sec,ligado a espermatogenesis
+estres oxidativo sistemico/plasmatico,redox,sistemico,core,capacidad antioxidante total plasmatica

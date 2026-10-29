@@ -1,0 +1,126 @@
+spanish,english,kind
+CRH,CRH,node
+POMC,POMC,node
+ACTH,ACTH,node
+alfa-MSH,alpha-MSH,node
+beta-endorfina,beta-endorphin,node
+Lipotropinas,Lipotropins,node
+Cortisol,Cortisol,node
+DHEA,DHEA,node
+Angiotensinogeno,Angiotensinogen,node
+Renina,Renin,node
+Angiotensina I,Angiotensin I,node
+Angiotensina II,Angiotensin II,node
+Aldosterona,Aldosterone,node
+ECA,ACE,node
+11b-HSD2,11beta-HSD2,node
+TRH,TRH,node
+TSH,TSH,node
+T4,T4,node
+T3,T3,node
+rT3,rT3,node
+D1,D1,node
+D2,D2,node
+D3,D3,node
+GHRH,GHRH,node
+Somatostatina,Somatostatin,node
+GH,GH,node
+IGF-1,IGF-1,node
+Ghrelina,Ghrelin,node
+Glucosa serica,Serum glucose,node
+Insulina,Insulin,node
+Glucagon,Glucagon,node
+GLP-1,GLP-1,node
+GIP,GIP,node
+Amilina,Amylin,node
+Carga proteica,Protein load,node
+Prolactina,Prolactin,node
+GnRH,GnRH,node
+LH,LH,node
+FSH,FSH,node
+Inhibina,Inhibin,node
+Activina,Activin,node
+Testosterona,Testosterone,node
+Estradiol,Estradiol,node
+Progesterona,Progesterone,node
+DHT,DHT,node
+5a-reductasa,5alpha-reductase,node
+Aromatasa,Aromatase,node
+Androstenediona,Androstenedione,node
+Acetilcolina,Acetylcholine,node
+Noradrenalina,Norepinephrine,node
+Adrenalina,Epinephrine,node
+Dopamina,Dopamine,node
+Serotonina,Serotonin,node
+KEAP1,KEAP1,node
+Nrf2,Nrf2,node
+SOD,SOD,node
+catalasa,Catalase,node
+GPx,GPx,node
+GSH,GSH,node
+GST,GST,node
+GR,GR,node
+HO-1,HO-1,node
+ROS,ROS,node
+MDA/TBARS,MDA/TBARS,node
+carbonilos proteicos,Protein carbonyls,node
+NO/nitritos,NO/nitrites,node
+glucemia,Glycemia,node
+sensibilidad a insulina,Insulin sensitivity,node
+manejo lipidico,Lipid handling,node
+balance energetico / peso,Energy balance / body weight,node
+termorregulacion,Thermoregulation,node
+respuesta inflamatoria aguda,Acute inflammatory response,node
+actividad inmune celular,Cellular immune activity,node
+integridad hepatocelular,Hepatocellular integrity,node
+colestasis / flujo biliar,Cholestasis / bile flow,node
+sintesis hepatica,Hepatic synthesis,node
+filtracion glomerular,Glomerular filtration,node
+manejo de urato,Urate handling,node
+integridad mucosa gastrica,Gastric mucosal integrity,node
+secrecion acida gastrica,Gastric acid secretion,node
+motilidad gastrointestinal,Gastrointestinal motility,node
+digestion de carbohidratos,Carbohydrate digestion,node
+eritropoyesis,Erythropoiesis,node
+coagulacion / plaquetas,Coagulation / platelets,node
+presion arterial,Arterial pressure,node
+tono vascular,Vascular tone,node
+nocicepcion,Nociception,node
+ansiedad,Anxiety,node
+afecto / depresion,Affect / depression,node
+umbral convulsivo,Seizure threshold,node
+crecimiento tumoral,Tumor growth,node
+cicatrizacion / epitelizacion,Wound healing / epithelialization,node
+fibrosis / matriz,Fibrosis / matrix,node
+espermatogenesis,Spermatogenesis,node
+"estres oxidativo [tisular, por compartimento]","__DROP__ (placeholder, lo reemplazan los 8 por compartimento)",node
+estres oxidativo hepatico,Hepatic oxidative stress,node
+estres oxidativo renal,Renal oxidative stress,node
+estres oxidativo cerebral,Cerebral oxidative stress,node
+estres oxidativo cardiaco,Cardiac oxidative stress,node
+estres oxidativo gastrico,Gastric oxidative stress,node
+estres oxidativo pancreatico,Pancreatic oxidative stress,node
+estres oxidativo testicular,Testicular oxidative stress,node
+estres oxidativo sistemico/plasmatico,Systemic oxidative stress,node
+secrecion biliar (coleresis),Biliary secretion (choleresis),node
+vaciamiento vesicular (colagogo),Gallbladder emptying (cholagogue),node
+biotransformacion fase I/II,Phase I/II biotransformation,node
+corticotropo,Corticotropic,module
+tirotropo,Thyrotropic,module
+somatotropo,Somatotropic,module
+pancreatico,Pancreatic,module
+prolactina,Prolactin,module
+gonadotropo,Gonadotropic,module
+SNA,Autonomic,module
+metabolico,Metabolic,module
+integrador,Integrative,module
+inmune,Immune,module
+hepatobiliar,Hepatobiliary,module
+renal,Renal,module
+digestivo,Digestive,module
+hematologico,Hematologic,module
+cardiovascular,Cardiovascular,module
+neuro-conductual,Neurobehavioral,module
+tisular,Tissue,module
+reproductivo,Reproductive,module
+redox,Redox,module

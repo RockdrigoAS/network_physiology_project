@@ -1,0 +1,89 @@
+origen,destino,signo,tier,tipo,estado,modulo,mecanismo
+CRH,POMC,+,PENDIENTE,S-S,construida,corticotropo,
+POMC,ACTH,+,PENDIENTE,S-S,construida,corticotropo,proteolisis
+POMC,alfa-MSH,+,PENDIENTE,S-S,construida,corticotropo,
+POMC,beta-endorfina,+,PENDIENTE,S-S,construida,corticotropo,
+POMC,Lipotropinas,+,PENDIENTE,S-S,construida,corticotropo,
+ACTH,Cortisol,+,PENDIENTE,S-S,construida,corticotropo,
+ACTH,DHEA,+,PENDIENTE,S-S,construida,corticotropo,
+Cortisol,CRH,-,PENDIENTE,S-S,construida,corticotropo,feedback largo
+Cortisol,POMC,-,PENDIENTE,S-S,construida,corticotropo,hipofisario
+Cortisol,ACTH,-,PENDIENTE,S-S,construida,corticotropo,Boron: inhibe liberacion de ACTH almacenada
+Angiotensinogeno,Angiotensina I,+,PENDIENTE,S-S,construida,corticotropo,via Renina (nodo)
+Angiotensina I,Angiotensina II,+,PENDIENTE,S-S,construida,corticotropo,via ECA (nodo)
+Angiotensina II,Aldosterona,+,PENDIENTE,S-S,construida,corticotropo,
+Aldosterona,Renina,-,PENDIENTE,S-S,construida,corticotropo,feedback largo
+Angiotensina II,Renina,-,PENDIENTE,S-S,construida,corticotropo,feedback corto
+ACTH,Aldosterona,+,PENDIENTE,S-S,construida,corticotropo,"cross-loop, debil"
+TRH,TSH,+,PENDIENTE,S-S,construida,tirotropo,
+TSH,T4,+,PENDIENTE,S-S,construida,tirotropo,
+T4,TSH,-,PENDIENTE,S-S,construida,tirotropo,
+T4,TRH,-,PENDIENTE,S-S,construida,tirotropo,
+T4,T3,+,PENDIENTE,S-S,construida,tirotropo,via D1/D2
+T4,rT3,+,PENDIENTE,S-S,construida,tirotropo,via D3
+T3,TSH,-,PENDIENTE,S-S,construida,tirotropo,
+T3,TRH,-,PENDIENTE,S-S,construida,tirotropo,
+TSH,T3,+,PENDIENTE,S-S,construida,tirotropo,"debil, aporte tiroideo directo"
+Cortisol,D2,-,PENDIENTE,S-S,construida,tirotropo,CROSS corticotropo; suprime conversion activa
+Cortisol,D3,+,PENDIENTE,S-S,construida,tirotropo,CROSS corticotropo; euthyroid sick
+TSH,D2,+,PENDIENTE,S-S,construida,tirotropo,hipofisario
+GHRH,GH,+,PENDIENTE,S-S,construida,somatotropo,
+Somatostatina,GH,-,PENDIENTE,S-S,construida,somatotropo,
+Ghrelina,GH,+,PENDIENTE,S-S,construida,somatotropo,
+GH,IGF-1,+,PENDIENTE,S-S,construida,somatotropo,hepatico
+IGF-1,GHRH,-,PENDIENTE,S-S,construida,somatotropo,feedback largo
+IGF-1,GH,-,PENDIENTE,S-S,construida,somatotropo,feedback largo
+IGF-1,Somatostatina,+,PENDIENTE,S-S,construida,somatotropo,
+Glucosa serica,Insulina,+,PENDIENTE,S-S,construida,pancreatico,
+Glucosa serica,Glucagon,-,PENDIENTE,S-S,construida,pancreatico,
+Carga proteica,Glucagon,+,PENDIENTE,S-S,construida,pancreatico,
+Carga proteica,Insulina,+,PENDIENTE,S-S,construida,pancreatico,
+GLP-1,Insulina,+,PENDIENTE,S-S,construida,pancreatico,
+GLP-1,Glucagon,-,PENDIENTE,S-S,construida,pancreatico,
+GIP,Insulina,+,PENDIENTE,S-S,construida,pancreatico,
+Somatostatina,Insulina,-,PENDIENTE,S-S,construida,pancreatico,paracrino intra-islote
+Somatostatina,Glucagon,-,PENDIENTE,S-S,construida,pancreatico,paracrino
+Glucagon,Insulina,+,PENDIENTE,S-S,construida,pancreatico,alfa->beta
+Insulina,Glucagon,-,PENDIENTE,S-S,construida,pancreatico,beta->alfa
+Insulina,Somatostatina,+,PENDIENTE,S-S,construida,pancreatico,beta->delta
+Insulina,Amilina,+,PENDIENTE,S-S,construida,pancreatico,co-secrecion
+Amilina,Glucagon,-,PENDIENTE,S-S,construida,pancreatico,
+Ghrelina,Insulina,-,PENDIENTE,S-S,construida,pancreatico,
+Insulina,Glucosa serica,-,PENDIENTE,S-S,construida,pancreatico,captura tisular
+Glucagon,Glucosa serica,+,PENDIENTE,S-S,construida,pancreatico,gluconeogenesis/glucogenolisis hepatica
+Amilina,vaciamiento gastrico,-,PENDIENTE,S-P,documentada,pancreatico,cruza a P; nodo P inexistente
+Dopamina,Prolactina,-,PENDIENTE,S-S,construida,prolactina,
+TRH,Prolactina,+,PENDIENTE,S-S,construida,prolactina,
+Prolactina,Dopamina,+,PENDIENTE,S-S,construida,prolactina,feedback corto
+GnRH,LH,+,PENDIENTE,S-S,construida,gonadotropo,
+GnRH,FSH,+,PENDIENTE,S-S,construida,gonadotropo,
+LH,Testosterona,+,PENDIENTE,S-S,construida,gonadotropo,Leydig; en mujer LH->androstenediona->E2 (teca)
+LH,Progesterona,+,PENDIENTE,S-S,construida,gonadotropo,cuerpo luteo
+FSH,Estradiol,+,PENDIENTE,S-S,construida,gonadotropo,aromatizacion granulosa
+FSH,Inhibina,+,PENDIENTE,S-S,construida,gonadotropo,
+FSH,Activina,+,PENDIENTE,S-S,construida,gonadotropo,
+Testosterona,GnRH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Testosterona,LH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Estradiol,GnRH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Estradiol,LH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Estradiol,FSH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Progesterona,GnRH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Progesterona,LH,-,PENDIENTE,S-S,construida,gonadotropo,feedback largo
+Inhibina,FSH,-,PENDIENTE,S-S,construida,gonadotropo,selectivo FSH
+Activina,FSH,+,PENDIENTE,S-S,construida,gonadotropo,selectivo FSH
+Testosterona,DHT,+,PENDIENTE,S-S,construida,gonadotropo,via 5a-reductasa
+Testosterona,Estradiol,+,PENDIENTE,S-S,construida,gonadotropo,via Aromatasa
+Androstenediona,Estradiol,+,PENDIENTE,S-S,construida,gonadotropo,via Aromatasa; embebida
+Insulina,Aromatasa,+,PENDIENTE,S-S,construida,gonadotropo,CROSS pancreatico; adiposo; PCOS
+Noradrenalina,CRH,+,PENDIENTE,S-S,construida,SNA,locus coeruleus
+Adrenalina,Glucagon,+,PENDIENTE,S-S,construida,SNA,
+Adrenalina,Insulina,-,PENDIENTE,S-S,construida,SNA,
+Noradrenalina,Glucagon,+,PENDIENTE,S-S,construida,SNA,
+Noradrenalina,Insulina,-,PENDIENTE,S-S,construida,SNA,
+Adrenalina,GH,+,PENDIENTE,S-S,construida,SNA,
+Acetilcolina,cascada inflamatoria,-,PENDIENTE,S-P,documentada,SNA,via colinergica antiinflam; modulo inmune inexistente
+Prolactina,GnRH,-,PENDIENTE,S-S,documentada_construible,prolactina/gonadotropo,hiperPRL inhibe pulsatilidad GnRH
+Prolactina,LH,-,PENDIENTE,S-S,documentada_construible,prolactina/gonadotropo,hipofisario directo
+DHEA,Testosterona,+,PENDIENTE,S-S,documentada_construible,corticotropo/gonadotropo,conversion periferica
+Prolactina,2do loop corticotropo,+,PENDIENTE,S-S,documentada_pendiente,prolactina,"debil, auditar"
+Prolactina,funcion inmune,+,PENDIENTE,S-S,documentada_pendiente,prolactina,T-reg/linfocitos; modulo inmune
