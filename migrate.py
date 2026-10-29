@@ -134,7 +134,7 @@ def load_edges(fname, colmap):
     # 
     for col in ["source", "target"]:
         if col in df.columns:
-            # Remove whitespace and suffixes like " (entrada)" or "(entrada)"
+            # Remove whitespace and suffixes 
             df[col] = df[col].astype(str).str.replace(r"\s*\(entrada\)", "", regex=True).str.strip()
             df[col] = df[col].map(t)
     # 
