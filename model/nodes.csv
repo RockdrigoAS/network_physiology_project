@@ -1,106 +1,203 @@
-id,stratum,module,type,role,readout_axis,compartment,notes
-CRH,S,Corticotropic,,readout,Corticotropic,,
-POMC,S,Corticotropic,,internal,,,
-ACTH,S,Corticotropic,,readout,Corticotropic,,
-alpha-MSH,S,Corticotropic,,internal,,,
-beta-endorphin,S,Corticotropic,,internal,,,
-Lipotropins,S,Corticotropic,,internal,,,
-Cortisol,S,Corticotropic,,readout,Corticotropic,,
-DHEA,S,Corticotropic,,readout,Corticotropic,,
-Angiotensinogen,S,Corticotropic,,internal,,,
-Renin,S,Corticotropic,,internal,,,
-Angiotensin I,S,Corticotropic,,internal,,,
-Angiotensin II,S,Corticotropic,,readout,Corticotropic,,
-Aldosterone,S,Corticotropic,,readout,Corticotropic,,
-ACE,S,Corticotropic,,internal,,,
-11beta-HSD2,S,Corticotropic,,internal,,,
-TRH,S,Thyrotropic,,readout,Thyrotropic,,
-TSH,S,Thyrotropic,,readout,Thyrotropic,,
-T4,S,Thyrotropic,,readout,Thyrotropic,,
-T3,S,Thyrotropic,,readout,Thyrotropic,,
-rT3,S,Thyrotropic,,internal,,,
-D1,S,Thyrotropic,,internal,,,
-D2,S,Thyrotropic,,internal,,,
-D3,S,Thyrotropic,,internal,,,
-GHRH,S,Somatotropic,,readout,Somatotropic,,
-Somatostatin,S,Somatotropic,,readout,Somatotropic,,
-GH,S,Somatotropic,,readout,Somatotropic,,
-IGF-1,S,Somatotropic,,readout,Somatotropic,,
-Ghrelin,S,Somatotropic,,internal,,,
-Serum glucose,S,Pancreatic,,readout,Pancreatic,,
-Insulin,S,Pancreatic,,readout,Pancreatic,,
-Glucagon,S,Pancreatic,,readout,Pancreatic,,
-GLP-1,S,Pancreatic,,internal,,,
-GIP,S,Pancreatic,,internal,,,
-Amylin,S,Pancreatic,,internal,,,
-Protein load,S,Pancreatic,,internal,,,
-Prolactin,S,Prolactin,,readout,Prolactin,,
-GnRH,S,Gonadotropic,,readout,Gonadotropic,,
-LH,S,Gonadotropic,,readout,Gonadotropic,,
-FSH,S,Gonadotropic,,readout,Gonadotropic,,
-Inhibin,S,Gonadotropic,,internal,,,
-Activin,S,Gonadotropic,,internal,,,
-Testosterone,S,Gonadotropic,,readout,Gonadotropic,,
-Estradiol,S,Gonadotropic,,readout,Gonadotropic,,
-Progesterone,S,Gonadotropic,,readout,Gonadotropic,,
-DHT,S,Gonadotropic,,internal,,,
-5alpha-reductase,S,Gonadotropic,,internal,,,
-Aromatase,S,Gonadotropic,,internal,,,
-Androstenedione,S,Gonadotropic,,internal,,,
-Acetylcholine,S,Autonomic,,readout,Autonomic,,
-Norepinephrine,S,Autonomic,,readout,Autonomic,,
-Epinephrine,S,Autonomic,,readout,Autonomic,,
-Dopamine,S,Autonomic,,readout,Autonomic,,
-Serotonin,S,Autonomic,,readout,Autonomic,,
-KEAP1,S,Redox,actividad,internal,,,
-Nrf2,S,Redox,actividad,internal,,,
-SOD,S,Redox,capacidad,internal,,,
-Catalase,S,Redox,capacidad,internal,,,
-GPx,S,Redox,capacidad,internal,,,
-GSH,S,Redox,capacidad,internal,,,
-GST,S,Redox,capacidad,internal,,,
-GR,S,Redox,capacidad,internal,,,
-HO-1,S,Redox,capacidad,internal,,,
-ROS,S,Redox,flujo,internal,,,
-MDA/TBARS,S,Redox,flujo,internal,,,
-Protein carbonyls,S,Redox,flujo,internal,,,
-NO/nitrites,S,Redox,flujo,internal,,,
-Glycemia,P,Metabolic,estado,internal,,,
-Insulin sensitivity,P,Metabolic,capacidad,internal,,,
-Lipid handling,P,Metabolic,estado,internal,,,
-Energy balance / body weight,P,Integrative,estado,internal,,,
-Thermoregulation,P,Metabolic,estado,internal,,,
-Acute inflammatory response,P,Immune,estado,internal,,,
-Cellular immune activity,P,Immune,capacidad,internal,,,
-Glomerular filtration,P,Renal,flujo,internal,,,
-Urate handling,P,Renal,flujo,internal,,,
-Gastric mucosal integrity,P,Digestive,estado,internal,,,
-Gastric acid secretion,P,Digestive,flujo,internal,,,
-Gastrointestinal motility,P,Digestive,flujo,internal,,,
-Carbohydrate digestion,P,Digestive,capacidad,internal,,,
-Erythropoiesis,P,Hematologic,estado,internal,,,
-Coagulation / platelets,P,Hematologic,capacidad,internal,,,
-Arterial pressure,P,Cardiovascular,estado,internal,,,
-Vascular tone,P,Cardiovascular,estado,internal,,,
-Nociception,P,Neurobehavioral,estado,internal,,,
-Anxiety,P,Neurobehavioral,estado,internal,,,
-Affect / depression,P,Neurobehavioral,estado,internal,,,
-Seizure threshold,P,Neurobehavioral,estado,internal,,,
-Tumor growth,P,Tissue,estado,internal,,,
-Wound healing / epithelialization,P,Tissue,flujo,internal,,,
-Fibrosis / matrix,P,Tissue,estado,internal,,,
-Spermatogenesis,P,Reproductive,estado,internal,,,
-Hepatic oxidative stress,P,Redox,,internal,,hepatico,
-Renal oxidative stress,P,Redox,,internal,,renal,
-Cerebral oxidative stress,P,Redox,,internal,,cerebral,
-Cardiac oxidative stress,P,Redox,,internal,,cardiaco,
-Gastric oxidative stress,P,Redox,,internal,,gastrico,
-Pancreatic oxidative stress,P,Redox,,internal,,pancreatico,
-Testicular oxidative stress,P,Redox,,internal,,testicular,
-Systemic oxidative stress,P,Redox,,internal,,sistemico,
-Hepatocellular integrity,P,Hepatobiliary,estado,internal,,,
-Cholestasis / bile flow,P,Hepatobiliary,flujo,internal,,,
-Hepatic synthesis,P,Hepatobiliary,capacidad,internal,,,
-Biliary secretion (choleresis),P,Hepatobiliary,flujo,internal,,,
-Gallbladder emptying (cholagogue),P,Hepatobiliary,flujo,internal,,,
-Phase I/II biotransformation,P,Hepatobiliary,capacidad,internal,,,
+id,stratum,layer,module,integrator,node_type,role,notes
+CRH,M,physiological,corticotropo,False,hormona_hipotalamica,readout,
+POMC,M,physiological,corticotropo,False,precursor,readout,proteólisis -> ACTH/aMSH/b-endorfina/lipotropinas
+ACTH,M,physiological,corticotropo,False,hormona_hipofisaria,readout,
+alpha-MSH,M,physiological,corticotropo,False,peptido,readout,
+beta-endorphin,M,physiological,corticotropo,False,peptido,readout,
+Lipotropins,M,physiological,corticotropo,False,peptido,readout,
+Cortisol,M,physiological,corticotropo,False,hormona_periferica,readout,
+DHEA,M,physiological,corticotropo,False,hormona_periferica,readout,
+Angiotensinogen,M,physiological,corticotropo,False,sustrato,readout,
+Renin,M,physiological,corticotropo,False,enzima,readout,§5.5 enzima-nodo
+Angiotensin I,M,physiological,corticotropo,False,intermediario,readout,
+Angiotensin II,M,physiological,corticotropo,False,peptido_efector,readout,2do loop / RAAS
+Aldosterone,M,physiological,corticotropo,False,hormona_periferica,readout,2do loop
+ACE,M,physiological,corticotropo,False,enzima,readout,§5.5 enzima-nodo
+11b-HSD2,M,physiological,corticotropo,False,enzima,readout,aristas a P pendientes
+TRH,M,physiological,tirotropo,False,hormona_hipotalamica,readout,multi-membresia
+TSH,M,physiological,tirotropo,False,hormona_hipofisaria,readout,
+T4,M,physiological,tirotropo,False,hormona_periferica,readout,
+T3,M,physiological,tirotropo,False,hormona_periferica,readout,
+rT3,M,physiological,tirotropo,False,metabolito,readout,ruta inactivadora
+D2,M,physiological,tirotropo,False,enzima,readout,deiodinasa
+D3,M,physiological,tirotropo,False,enzima,readout,deiodinasa
+GHRH,M,physiological,somatotropo,False,hormona_hipotalamica,readout,
+Somatostatin,M,physiological,somatotropo,False,hormona,readout,multi-membresia
+GH,M,physiological,somatotropo,False,hormona_hipofisaria,readout,
+IGF-1,M,physiological,somatotropo,False,factor_periferico,readout,
+Ghrelin,M,physiological,somatotropo,False,hormona,readout,multi-membresia
+Glucose,M,physiological,pancreatico,False,sustrato,readout,handoff la etiqueta 'cross 2B' pero es entidad S (concentracion)
+Insulin,M,physiological,pancreatico,False,hormona,readout,
+Glucagon,M,physiological,pancreatico,False,hormona,readout,
+GLP-1,M,physiological,pancreatico,False,hormona_incretina,readout,
+GIP,M,physiological,pancreatico,False,hormona_incretina,readout,
+Amylin,M,physiological,pancreatico,False,hormona,readout,
+Protein load,M,physiological,pancreatico,False,sustrato,readout,nodo de entrada
+Prolactin,M,physiological,prolactina,False,hormona_hipofisaria,readout,1er loop inhibitorio (dopamina)
+GnRH,M,physiological,gonadotropo,False,hormona_hipotalamica,readout,
+LH,M,physiological,gonadotropo,False,hormona_hipofisaria,readout,
+FSH,M,physiological,gonadotropo,False,hormona_hipofisaria,readout,
+Inhibin,M,physiological,gonadotropo,False,hormona,readout,
+Activin,M,physiological,gonadotropo,False,hormona,readout,
+Testosterone,M,physiological,gonadotropo,False,hormona_periferica,readout,
+Estradiol,M,physiological,gonadotropo,False,hormona_periferica,readout,
+Progesterone,M,physiological,gonadotropo,False,hormona_periferica,readout,
+DHT,M,physiological,gonadotropo,False,hormona_periferica,readout,
+5-alpha-reductase,M,physiological,gonadotropo,False,enzima,readout,§5.5 enzima-nodo
+Aromatase,M,physiological,gonadotropo,False,enzima,readout,§5.5 enzima-nodo
+Androstenedione,M,physiological,gonadotropo,False,intermediario,readout,EMBEBIDA (no nodo pleno)
+Acetylcholine,M,physiological,SNA,False,neurotransmisor,readout,piSigma
+Noradrenaline,M,physiological,SNA,False,neurotransmisor,readout,alfa/beta Sigma
+Adrenaline,M,physiological,SNA,False,neurohormona,readout,betaSigma
+Dopamine,M,physiological,SNA,False,neurotransmisor,readout,multi; alfaSigma central + PIF
+Serotonin,M,physiological,SNA,False,neurotransmisor,readout,AMBIGUO: citada como multi-membresia (piSigma central) pero NO enumerada como no
+Nitric oxide,M,physiological,vascular_volumen,False,gasotransmisor,internal,vasodilatador endotelial (cGMP); blanco de plantas
+eNOS,M,physiological,vascular_volumen,False,enzima,internal,§5.5(a); produce NO; blanco de inducción (M->M: eNOS->Nitric oxide)
+Endothelin-1,M,physiological,vascular_volumen,False,peptido,internal,vasoconstrictor (ETA)
+Vasopressin,M,physiological,vascular_volumen,False,hormona,internal,ADH; V1 vascular / V2 renal
+ANP,M,physiological,vascular_volumen,False,hormona,internal,natriuretico auricular
+BNP,M,physiological,vascular_volumen,False,hormona,internal,natriuretico ventricular
+Bradykinin,M,physiological,vascular_volumen,False,peptido,internal,vasodilatador; sustrato de ACE (M->M: ACE -| Bradykinin)
+Leptin,M,physiological,adiposo,False,adipoquina,internal,saciedad; acoplada a adiposity
+Adiponectin,M,physiological,adiposo,False,adipoquina,internal,mejora sensibilidad a insulina
+Xanthine oxidase,M,physiological,metabolico,False,enzima,internal,"§5.5(a,b); purinas->urato + ROS"
+HMG-CoA reductase,M,physiological,metabolico,False,enzima,internal,§5.5(a); sintesis de colesterol (blanco estatina)
+Histamine,M,physiological,autacoides_eicosanoides,False,autacoide,internal,"mastocito; H1 broncoconstriccion, secrecion gastrica, vasodilatacion"
+Leukotriene B4,M,physiological,autacoides_eicosanoides,False,eicosanoide,internal,"5-LOX; broncoconstriccion, quimiotaxis"
+CCK,M,physiological,enteroendocrino,False,hormona,internal,contraccion vesicular; relaja esfinter de Oddi
+Secretin,M,physiological,enteroendocrino,False,hormona,internal,coleresis/secrecion de bicarbonato
+Gastrin,M,physiological,enteroendocrino,False,hormona,internal,estimula secrecion acida gastrica
+Motilin,M,physiological,enteroendocrino,False,hormona,internal,complejo motor migratorio
+PYY,M,physiological,enteroendocrino,False,hormona,internal,saciedad
+GLP-2,M,physiological,enteroendocrino,False,hormona,internal,trofismo/barrera intestinal
+Prostaglandin E2,M,physiological,autacoides_eicosanoides,False,eicosanoide,internal,"COX; citoproteccion gastrica, inhibe acido, inflamacion"
+alpha-glucosidase,M,physiological,enzima_digestiva,False,enzima,internal,§5.5a; digestion de carbohidratos (blanco acarbosa)
+alpha-amylase,M,physiological,enzima_digestiva,False,enzima,internal,§5.5a; digestion de almidon
+Lipase,M,physiological,enzima_digestiva,False,enzima,internal,§5.5a; digestion de lipidos (blanco orlistat)
+NF-kB,M,physiological,inflamacion,False,factor_transcripcion,internal,TF pro-inflamatorio; activado por ROS
+iNOS,M,physiological,inflamacion,False,enzima,internal,§5.5a; NO inflamatorio/nitrosativo
+COX-2,M,physiological,inflamacion,False,enzima,internal,"§5.5a,b; -> PGE2/TXA2 (blanco AINE)"
+5-LOX,M,physiological,inflamacion,False,enzima,internal,§5.5a; -> leucotrienos
+EPO,M,physiological,renal_hematopoyetico,False,hormona,internal,eritropoyetina
+TPO,M,physiological,renal_hematopoyetico,False,hormona,internal,trombopoyetina
+Thrombin,M,physiological,hemostasia,False,enzima,internal,cascada de coagulacion
+tPA,M,physiological,hemostasia,False,enzima,internal,activador de plasminogeno
+Hepcidin,M,physiological,renal_hematopoyetico,False,hormona,internal,regulador maestro del hierro
+Thromboxane,M,physiological,autacoides_eicosanoides,False,eicosanoide,internal,TXA2; agregante/vasoconstrictor
+Prostacyclin,M,physiological,autacoides_eicosanoides,False,eicosanoide,internal,PGI2; antiagregante/vasodilatador
+GABA,M,physiological,SNA,False,neurotransmisor,internal,inhibitorio principal (GABA-A)
+Glutamate,M,physiological,SNA,False,neurotransmisor,internal,excitatorio principal (NMDA/AMPA)
+Melatonin,M,physiological,pineal,False,hormona,internal,ritmo circadiano/sueno
+BDNF,M,physiological,SNA,False,neurotrofina,internal,plasticidad/neuroproteccion
+PTH,M,physiological,mineral_oseo,False,hormona,internal,paratohormona; moviliza calcio
+Calcitonin,M,physiological,mineral_oseo,False,hormona,internal,inhibe resorcion osea
+Calcitriol,M,physiological,mineral_oseo,False,hormona,internal,"1,25-(OH)2-D3; absorcion de Ca"
+Oxytocin,M,physiological,gonadotropo,False,hormona,internal,contraccion uterina / eyeccion de leche
+TGF-beta,M,physiological,tisular,False,factor_crecimiento,internal,cicatrizacion y fibrosis
+alpha_sympathetic,M,endobiogenic,autonomic,False,tone_construct,internal,driver autonomico alfa
+beta_sympathetic,M,endobiogenic,autonomic,False,tone_construct,internal,driver autonomico beta
+parasympathetic,M,endobiogenic,autonomic,False,tone_construct,internal,driver parasimpatico
+blood_pressure,P,physiological,cardiovascular,True,state,,integrador
+cardiac_chronotropy,P,physiological,cardiovascular,False,state,,
+cardiac_inotropy,P,physiological,cardiovascular,False,parameter,,contractilidad
+cardiac_conduction,P,physiological,cardiovascular,False,parameter,,conducción/excitabilidad; antiarrítmico
+arterial_tone,P,physiological,cardiovascular,False,parameter,,resistencia periférica
+venous_tone,P,physiological,cardiovascular,False,parameter,,vasos de capacitancia
+capillary_resistance,P,physiological,cardiovascular,False,parameter,,permeabilidad/fragilidad capilar (polo no patológico)
+arterial_wall_integrity,P,physiological,cardiovascular,False,integrity,,
+myocardial_integrity,P,physiological,cardiovascular,False,integrity,,cardiotoxicidad
+glomerular_filtration,P,physiological,renal,False,flow,,
+water_excretion,P,physiological,renal,False,flow,,diuresis
+sodium_excretion,P,physiological,renal,False,flow,,natriuresis
+chloride_excretion,P,physiological,renal,False,flow,,
+potassium_excretion,P,physiological,renal,False,flow,,
+nitrogenous_waste_excretion,P,physiological,renal,False,flow,,relación con ureagénesis
+urate_excretion,P,physiological,renal,False,flow,,
+urinary_pH,P,physiological,renal,False,state,,acidificación urinaria
+glomerular_barrier,P,physiological,renal,False,integrity,,
+renal_integrity,P,physiological,renal,False,integrity,,nefroprotección
+extracellular_volume,P,physiological,renal,False,state,,
+serum_sodium,P,physiological,renal,False,state,,
+serum_potassium,P,physiological,renal,False,state,,caso regaliz
+serum_chloride,P,physiological,renal,False,state,,
+plasma_osmolality,P,physiological,renal,False,state,,
+acid_base_status,P,physiological,renal,False,state,,
+ureteral_tone,P,physiological,renal,False,parameter,,cólico renal / antiespasmódico
+hepatocellular_integrity,P,physiological,hepatobiliary,False,integrity,,
+bile_flow,P,physiological,hepatobiliary,False,flow,,colestasis = ↓
+gallbladder_emptying,P,physiological,hepatobiliary,False,flow,,colagogo vs colerético (bile_flow)
+biotransformation,P,physiological,hepatobiliary,False,flow,,Fase I/II; CYP = canal
+hepatic_synthesis,P,physiological,hepatobiliary,False,flow,,
+ureagenesis,P,physiological,hepatobiliary,False,flow,,ciclo urea; disposición de N
+biliary_tone,P,physiological,hepatobiliary,False,parameter,,cólico biliar / antiespasmódico
+gastric_secretion,P,physiological,digestive,False,flow,,
+gastric_mucosal_integrity,P,physiological,digestive,False,integrity,,
+gi_motility,P,physiological,digestive,False,state,,tránsito; tono liso GI
+pancreatic_exocrine_secretion,P,physiological,digestive,False,flow,,enzimas/bicarbonato
+appetite,P,physiological,digestive,False,state,,impulso; leptina/grelina/PYY
+carbohydrate_digestion,P,physiological,digestive,False,flow,,α-glucosidasa/amilasa (enzima-nodo)
+lipid_digestion,P,physiological,digestive,False,flow,,lipasa (enzima-nodo)
+intestinal_barrier_permeability,P,physiological,digestive,False,parameter,,
+salivation,P,physiological,digestive,False,flow,,
+bronchial_tone,P,physiological,respiratory,False,parameter,,broncodilatación
+mucociliary_clearance,P,physiological,respiratory,False,flow,,expectorante/mucolítico
+cough_reflex,P,physiological,respiratory,False,parameter,,antitusivo
+glycemia,P,physiological,metabolic,True,state,,integrador; secrecion de insulina vive en M (ver Opcion A)
+hepatic_glucose_production,P,physiological,metabolic,False,flow,,
+peripheral_glucose_uptake,P,physiological,metabolic,False,flow,,
+insulin_sensitivity,P,physiological,metabolic,False,parameter,,
+plasma_lipids,P,physiological,metabolic,True,state,,integrador
+hepatic_lipid_content,P,physiological,metabolic,False,state,,esteatosis
+adiposity,P,physiological,metabolic,True,state,,integrador
+energy_intake,P,physiological,metabolic,False,flow,,
+energy_expenditure,P,physiological,metabolic,False,flow,,
+serum_urate,P,physiological,metabolic,False,state,,purinas
+urate_production,P,physiological,metabolic,False,flow,,xantina oxidasa
+antioxidant_capacity,P,physiological,redox,False,state,,instanciar por compartimento
+oxidative_damage,P,physiological,redox,False,integrity,,instanciar por compartimento
+acute_inflammation,P,physiological,inflammation,False,state,,edema = canal
+chronic_inflammation,P,physiological,inflammation,False,state,,
+immune_effector_activity,P,physiological,inflammation,False,state,,
+adaptive_immune_activity,P,physiological,inflammation,False,state,,
+allergic_response,P,physiological,inflammation,False,state,,IgE/mastocito; antihistamínico
+body_temperature_setpoint,P,physiological,thermoregulation,False,state,,homeostasis hipotalámica; fiebre = desplazamiento del setpoint
+sweating,P,physiological,thermoregulation,False,flow,,efector de termorregulación
+erythropoiesis,P,physiological,hematological,False,flow,,
+leukopoiesis,P,physiological,hematological,False,flow,,serie blanca
+thrombopoiesis,P,physiological,hematological,False,flow,,
+coagulation,P,physiological,hematological,False,state,,
+platelet_aggregation,P,physiological,hematological,False,parameter,,antiagregante (función)
+fibrinolysis,P,physiological,hematological,False,flow,,
+iron_status,P,physiological,hematological,False,state,,
+erythrocyte_integrity,P,physiological,hematological,False,integrity,,
+tissue_repair,P,physiological,tissue,False,flow,,cierre de herida/epitelización
+matrix_deposition,P,physiological,tissue,False,integrity,,locus: herida cutánea (reparación) / órgano (fibrosis)
+cell_proliferation,P,physiological,tissue,False,flow,,transversal celular
+skeletal_muscle_tone,P,physiological,musculoskeletal,False,parameter,,
+bone_mass,P,physiological,musculoskeletal,False,state,,remodelado óseo
+bone_formation,P,physiological,musculoskeletal,False,flow,,
+bone_resorption,P,physiological,musculoskeletal,False,flow,,
+nociception,P,physiological,neurobehavioral,False,state,,
+sleep,P,physiological,neurobehavioral,False,state,,sedante/hipnótico
+affect,P,physiological,neurobehavioral,False,state,,
+anxiety,P,physiological,neurobehavioral,False,state,,
+seizure_threshold,P,physiological,neurobehavioral,False,parameter,,umbral convulsivo
+neuronal_integrity,P,physiological,neurobehavioral,False,integrity,,neuroprotección
+nerve_conduction,P,physiological,neurobehavioral,False,parameter,,conducción nerviosa local; neuropatía
+cognition_memory,P,physiological,neurobehavioral,False,state,,
+locomotor_activity,P,physiological,neurobehavioral,False,state,,
+spermatogenesis,P,physiological,reproductive,False,flow,,
+uterine_tone,P,physiological,reproductive,False,parameter,,dismenorrea/antiespasmódico; emenagogo
+lactation,P,physiological,reproductive,False,flow,,
+tumor_burden,endpoint,physiological,—,False,endpoint,,no es proceso del huésped
+microbial_load,endpoint,physiological,—,False,endpoint,,no es proceso del huésped
+adaptation_to_stress,P,endobiogenic,terrain,False,state,,
+central_adaptation_response,P,endobiogenic,terrain,False,state,,
+resilience,P,endobiogenic,terrain,False,state,,
+calm_alertness,P,endobiogenic,terrain,False,state,,
+focus,P,endobiogenic,terrain,False,state,,
+creativity,P,endobiogenic,terrain,False,state,,
+irritability,P,endobiogenic,terrain,False,state,,
+salt_craving,P,endobiogenic,terrain,False,state,,
+Nrf2,M,physiological,redox,False,factor_transcripcion,internal,maestro antioxidante (ARE)
+ROS,M,physiological,redox,False,especie_reactiva,internal,especies reactivas de oxigeno

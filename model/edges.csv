@@ -1,116 +1,404 @@
-source,target,sign,grade,channel_type,route_level,mechanism,status,evidence
-CRH,POMC,1,,,,,proposed,
-POMC,ACTH,1,,,,proteolisis,proposed,
-POMC,alpha-MSH,1,,,,,proposed,
-POMC,beta-endorphin,1,,,,,proposed,
-POMC,Lipotropins,1,,,,,proposed,
-ACTH,Cortisol,1,,,,,proposed,
-ACTH,DHEA,1,,,,,proposed,
-Cortisol,CRH,-1,,,,feedback largo,proposed,
-Cortisol,POMC,-1,,,,hipofisario,proposed,
-Cortisol,ACTH,-1,,,,Boron: inhibe liberacion de ACTH almacenada,proposed,
-Angiotensinogen,Angiotensin I,1,,,,via Renina (nodo),proposed,
-Angiotensin I,Angiotensin II,1,,,,via ECA (nodo),proposed,
-Angiotensin II,Aldosterone,1,,,,,proposed,
-Aldosterone,Renin,-1,,,,feedback largo,proposed,
-Angiotensin II,Renin,-1,,,,feedback corto,proposed,
-ACTH,Aldosterone,1,,,,"cross-loop, debil",proposed,
-TRH,TSH,1,,,,,proposed,
-TSH,T4,1,,,,,proposed,
-T4,TSH,-1,,,,,proposed,
-T4,TRH,-1,,,,,proposed,
-T4,T3,1,,,,via D1/D2,proposed,
-T4,rT3,1,,,,via D3,proposed,
-T3,TSH,-1,,,,,proposed,
-T3,TRH,-1,,,,,proposed,
-TSH,T3,1,,,,"debil, aporte tiroideo directo",proposed,
-Cortisol,D2,-1,,,,CROSS corticotropo; suprime conversion activa,proposed,
-Cortisol,D3,1,,,,CROSS corticotropo; euthyroid sick,proposed,
-TSH,D2,1,,,,hipofisario,proposed,
-GHRH,GH,1,,,,,proposed,
-Somatostatin,GH,-1,,,,,proposed,
-Ghrelin,GH,1,,,,,proposed,
-GH,IGF-1,1,,,,hepatico,proposed,
-IGF-1,GHRH,-1,,,,feedback largo,proposed,
-IGF-1,GH,-1,,,,feedback largo,proposed,
-IGF-1,Somatostatin,1,,,,,proposed,
-Serum glucose,Insulin,1,,,,,proposed,
-Serum glucose,Glucagon,-1,,,,,proposed,
-Protein load,Glucagon,1,,,,,proposed,
-Protein load,Insulin,1,,,,,proposed,
-GLP-1,Insulin,1,,,,,proposed,
-GLP-1,Glucagon,-1,,,,,proposed,
-GIP,Insulin,1,,,,,proposed,
-Somatostatin,Insulin,-1,,,,paracrino intra-islote,proposed,
-Somatostatin,Glucagon,-1,,,,paracrino,proposed,
-Glucagon,Insulin,1,,,,alfa->beta,proposed,
-Insulin,Glucagon,-1,,,,beta->alfa,proposed,
-Insulin,Somatostatin,1,,,,beta->delta,proposed,
-Insulin,Amylin,1,,,,co-secrecion,proposed,
-Amylin,Glucagon,-1,,,,,proposed,
-Ghrelin,Insulin,-1,,,,,proposed,
-Insulin,Serum glucose,-1,,,,captura tisular,proposed,
-Glucagon,Serum glucose,1,,,,gluconeogenesis/glucogenolisis hepatica,proposed,
-Dopamine,Prolactin,-1,,,,,proposed,
-TRH,Prolactin,1,,,,,proposed,
-Prolactin,Dopamine,1,,,,feedback corto,proposed,
-GnRH,LH,1,,,,,proposed,
-GnRH,FSH,1,,,,,proposed,
-LH,Testosterone,1,,,,Leydig; en mujer LH->androstenediona->E2 (teca),proposed,
-LH,Progesterone,1,,,,cuerpo luteo,proposed,
-FSH,Estradiol,1,,,,aromatizacion granulosa,proposed,
-FSH,Inhibin,1,,,,,proposed,
-FSH,Activin,1,,,,,proposed,
-Testosterone,GnRH,-1,,,,feedback largo,proposed,
-Testosterone,LH,-1,,,,feedback largo,proposed,
-Estradiol,GnRH,-1,,,,feedback largo,proposed,
-Estradiol,LH,-1,,,,feedback largo,proposed,
-Estradiol,FSH,-1,,,,feedback largo,proposed,
-Progesterone,GnRH,-1,,,,feedback largo,proposed,
-Progesterone,LH,-1,,,,feedback largo,proposed,
-Inhibin,FSH,-1,,,,selectivo FSH,proposed,
-Activin,FSH,1,,,,selectivo FSH,proposed,
-Testosterone,DHT,1,,,,via 5a-reductasa,proposed,
-Testosterone,Estradiol,1,,,,via Aromatasa,proposed,
-Androstenedione,Estradiol,1,,,,via Aromatasa; embebida,proposed,
-Insulin,Aromatase,1,,,,CROSS pancreatico; adiposo; PCOS,proposed,
-Norepinephrine,CRH,1,,,,locus coeruleus,proposed,
-Epinephrine,Glucagon,1,,,,,proposed,
-Epinephrine,Insulin,-1,,,,,proposed,
-Norepinephrine,Glucagon,1,,,,,proposed,
-Norepinephrine,Insulin,-1,,,,,proposed,
-Epinephrine,GH,1,,,,,proposed,
-Prolactin,GnRH,-1,,,,hiperPRL inhibe pulsatilidad GnRH,proposed,
-Prolactin,LH,-1,,,,hipofisario directo,proposed,
-DHEA,Testosterone,1,,,,conversion periferica,proposed,
-KEAP1,Nrf2,-1,1,,1,secuestro/degradacion de Nrf2,proposed,
-Nrf2,SOD,1,1,,1,induccion ARE,proposed,
-Nrf2,Catalase,1,1,,1,induccion ARE,proposed,
-Nrf2,GPx,1,1,,1,induccion ARE,proposed,
-Nrf2,GST,1,1,,1,induccion ARE (fase II),proposed,
-Nrf2,HO-1,1,1,,1,induccion ARE,proposed,
-Nrf2,GSH,1,1,,1,induccion GCL -> sintesis GSH,proposed,
-SOD,ROS,-1,1,,1,dismutacion,proposed,
-Catalase,ROS,-1,1,,1,descomposicion H2O2,proposed,
-GPx,ROS,-1,1,,1,reduccion de peroxidos,proposed,
-GSH,ROS,-1,1,,1,neutralizacion directa,proposed,
-GR,GSH,1,1,,1,regeneracion GSH,proposed,
-ROS,MDA/TBARS,1,1,,1,peroxidacion lipidica,proposed,
-ROS,Protein carbonyls,1,1,,1,oxidacion proteica,proposed,
-SOD,Hepatic oxidative stress,-1,1,,1,capacidad antioxidante baja el estado,proposed,
-Catalase,Hepatic oxidative stress,-1,1,,1,idem,proposed,
-GPx,Hepatic oxidative stress,-1,1,,1,idem,proposed,
-GSH,Hepatic oxidative stress,-1,1,,1,idem,proposed,
-MDA/TBARS,Hepatic oxidative stress,1,1,,1,marcador de daño sube el estado,proposed,
-Protein carbonyls,Hepatic oxidative stress,1,1,,1,idem,proposed,
-Hepatic oxidative stress,Hepatocellular integrity,-1,2,,2,estres oxidativo deteriora integridad (co-medicion MDA/ALT),proposed,
-Renal oxidative stress,Glomerular filtration,-1,2,,2,dano oxidativo renal deteriora filtracion,proposed,
-Cerebral oxidative stress,Affect / depression,-1,3,,2,hipotesis; auditar,proposed,
-NO/nitrites,Acute inflammatory response,1,2,,1,via iNOS,proposed,
-Hepatic oxidative stress,Hepatocellular integrity,-1,2,,2,CRUCE bloque01; dano oxidativo -> lesion hepatocelular,proposed,
-Acute inflammatory response,Hepatocellular integrity,-1,2,,2,TNF/NF-kB -> injuria hepatocelular,proposed,
-Hepatocellular integrity,Hepatic synthesis,1,2,,2,hepatocito integro -> capacidad de sintesis,proposed,
-Hepatocellular integrity,Cholestasis / bile flow,-1,3,,2,lesion puede cursar con colestasis; auditar,proposed,
-Phase I/II biotransformation,Hepatic oxidative stress,-1,3,,2,fase II (GST) baja estado oxidativo; nodo compartido,proposed,
-Cortisol,Hepatic synthesis,1,3,,3,hipotesis endobiogenica; cortisol modula metabolismo hepatico; auditar,proposed,
-Insulin,Lipid handling,-1,1,,1,insulina reduce lipogenesis->VLDL (cruce metabolico),proposed,
+source,target,sign,grade,channel_type,edge_kind,layer,block,mechanism,source_ref,status,note
+CRH,POMC,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+POMC,ACTH,1,1,humoral,M-M,physiological,corticotropo,proteolisis,,audited,construida
+POMC,alpha-MSH,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+POMC,beta-endorphin,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+POMC,Lipotropins,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+ACTH,Cortisol,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+ACTH,DHEA,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+Cortisol,CRH,-1,1,humoral,M-M,physiological,corticotropo,feedback largo,,audited,construida
+Cortisol,POMC,-1,1,humoral,M-M,physiological,corticotropo,hipofisario,,audited,construida
+Cortisol,ACTH,-1,1,humoral,M-M,physiological,corticotropo,Boron: inhibe liberacion de ACTH almacenada,,audited,construida
+Angiotensinogen,Angiotensin I,1,1,humoral,M-M,physiological,corticotropo,via Renina (nodo),,audited,construida
+Angiotensin I,Angiotensin II,1,1,humoral,M-M,physiological,corticotropo,via ECA (nodo),,audited,construida
+Angiotensin II,Aldosterone,1,1,humoral,M-M,physiological,corticotropo,,,audited,construida
+Aldosterone,Renin,-1,1,humoral,M-M,physiological,corticotropo,feedback largo,,audited,construida
+Angiotensin II,Renin,-1,1,humoral,M-M,physiological,corticotropo,feedback corto,,audited,construida
+ACTH,Aldosterone,1,1,humoral,M-M,physiological,corticotropo,"cross-loop, debil",,audited,construida
+TRH,TSH,1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+TSH,T4,1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+T4,TSH,-1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+T4,TRH,-1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+T4,T3,1,1,humoral,M-M,physiological,tirotropo,via D1/D2,,audited,construida
+T4,rT3,1,1,humoral,M-M,physiological,tirotropo,via D3,,audited,construida
+T3,TSH,-1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+T3,TRH,-1,1,humoral,M-M,physiological,tirotropo,,,audited,construida
+TSH,T3,1,1,humoral,M-M,physiological,tirotropo,"debil, aporte tiroideo directo",,audited,construida
+Cortisol,D2,-1,1,humoral,M-M,physiological,tirotropo,CROSS corticotropo; suprime conversion activa,,audited,construida
+Cortisol,D3,1,1,humoral,M-M,physiological,tirotropo,CROSS corticotropo; euthyroid sick,,audited,construida
+TSH,D2,1,1,humoral,M-M,physiological,tirotropo,hipofisario,,audited,construida
+GHRH,GH,1,1,humoral,M-M,physiological,somatotropo,,,audited,construida
+Somatostatin,GH,-1,1,humoral,M-M,physiological,somatotropo,,,audited,construida
+Ghrelin,GH,1,1,humoral,M-M,physiological,somatotropo,,,audited,construida
+GH,IGF-1,1,1,humoral,M-M,physiological,somatotropo,hepatico,,audited,construida
+IGF-1,GHRH,-1,1,humoral,M-M,physiological,somatotropo,feedback largo,,audited,construida
+IGF-1,GH,-1,1,humoral,M-M,physiological,somatotropo,feedback largo,,audited,construida
+IGF-1,Somatostatin,1,1,humoral,M-M,physiological,somatotropo,,,audited,construida
+Glucose,Insulin,1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Glucose,Glucagon,-1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Protein load,Glucagon,1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Protein load,Insulin,1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+GLP-1,Insulin,1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+GLP-1,Glucagon,-1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+GIP,Insulin,1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Somatostatin,Insulin,-1,1,humoral,M-M,physiological,pancreatico,paracrino intra-islote,,audited,construida
+Somatostatin,Glucagon,-1,1,humoral,M-M,physiological,pancreatico,paracrino,,audited,construida
+Glucagon,Insulin,1,1,humoral,M-M,physiological,pancreatico,alfa->beta,,audited,construida
+Insulin,Glucagon,-1,1,humoral,M-M,physiological,pancreatico,beta->alfa,,audited,construida
+Insulin,Somatostatin,1,1,humoral,M-M,physiological,pancreatico,beta->delta,,audited,construida
+Insulin,Amylin,1,1,humoral,M-M,physiological,pancreatico,co-secrecion,,audited,construida
+Amylin,Glucagon,-1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Ghrelin,Insulin,-1,1,humoral,M-M,physiological,pancreatico,,,audited,construida
+Insulin,Glucose,-1,1,humoral,M-M,physiological,pancreatico,captura tisular,,audited,construida
+Glucagon,Glucose,1,1,humoral,M-M,physiological,pancreatico,gluconeogenesis/glucogenolisis hepatica,,audited,construida
+Amylin,gi_motility,-1,2,humoral,M-P,physiological,pancreatico,cruza a P; nodo P inexistente,,audited,documentada
+Dopamine,Prolactin,-1,1,humoral,M-M,physiological,prolactina,,,audited,construida
+TRH,Prolactin,1,1,humoral,M-M,physiological,prolactina,,,audited,construida
+Prolactin,Dopamine,1,1,humoral,M-M,physiological,prolactina,feedback corto,,audited,construida
+GnRH,LH,1,1,humoral,M-M,physiological,gonadotropo,,,audited,construida
+GnRH,FSH,1,1,humoral,M-M,physiological,gonadotropo,,,audited,construida
+LH,Testosterone,1,1,humoral,M-M,physiological,gonadotropo,Leydig; en mujer LH->androstenediona->E2 (teca),,audited,construida
+LH,Progesterone,1,1,humoral,M-M,physiological,gonadotropo,cuerpo luteo,,audited,construida
+FSH,Estradiol,1,1,humoral,M-M,physiological,gonadotropo,aromatizacion granulosa,,audited,construida
+FSH,Inhibin,1,1,humoral,M-M,physiological,gonadotropo,,,audited,construida
+FSH,Activin,1,1,humoral,M-M,physiological,gonadotropo,,,audited,construida
+Testosterone,GnRH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Testosterone,LH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Estradiol,GnRH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Estradiol,LH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Estradiol,FSH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Progesterone,GnRH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Progesterone,LH,-1,1,humoral,M-M,physiological,gonadotropo,feedback largo,,audited,construida
+Inhibin,FSH,-1,1,humoral,M-M,physiological,gonadotropo,selectivo FSH,,audited,construida
+Activin,FSH,1,1,humoral,M-M,physiological,gonadotropo,selectivo FSH,,audited,construida
+Testosterone,DHT,1,1,humoral,M-M,physiological,gonadotropo,via 5a-reductasa,,audited,construida
+Testosterone,Estradiol,1,1,humoral,M-M,physiological,gonadotropo,via Aromatasa,,audited,construida
+Androstenedione,Estradiol,1,1,humoral,M-M,physiological,gonadotropo,via Aromatasa; embebida,,audited,construida
+Insulin,Aromatase,1,1,humoral,M-M,physiological,gonadotropo,CROSS pancreatico; adiposo; PCOS,,audited,construida
+Noradrenaline,CRH,1,1,humoral,M-M,physiological,SNA,locus coeruleus,,audited,construida
+Adrenaline,Glucagon,1,1,humoral,M-M,physiological,SNA,,,audited,construida
+Adrenaline,Insulin,-1,1,humoral,M-M,physiological,SNA,,,audited,construida
+Noradrenaline,Glucagon,1,1,humoral,M-M,physiological,SNA,,,audited,construida
+Noradrenaline,Insulin,-1,1,humoral,M-M,physiological,SNA,,,audited,construida
+Adrenaline,GH,1,1,humoral,M-M,physiological,SNA,,,audited,construida
+Acetylcholine,acute_inflammation,-1,2,humoral,M-P,physiological,SNA,via colinergica antiinflam; modulo inmune inexistente,,audited,documentada
+Prolactin,GnRH,-1,2,humoral,M-M,physiological,prolactina/gonadotropo,hiperPRL inhibe pulsatilidad GnRH,,audited,documentada_construible
+Prolactin,LH,-1,2,humoral,M-M,physiological,prolactina/gonadotropo,hipofisario directo,,audited,documentada_construible
+DHEA,Testosterone,1,2,humoral,M-M,physiological,corticotropo/gonadotropo,conversion periferica,,audited,documentada_construible
+Prolactin,Cortisol,1,3,humoral,M-M,physiological,prolactina,"debil, auditar",,audited,documentada_pendiente
+Prolactin,immune_effector_activity,1,3,humoral,M-M,physiological,prolactina,T-reg/linfocitos; modulo inmune,,audited,documentada_pendiente
+Angiotensin II,arterial_tone,1,1,humoral,M-P,physiological,cardiovascular,vasoconstriccion directa (AT1),,audited,
+Angiotensin II,myocardial_integrity,-1,3,humoral,M-P,physiological,cardiovascular,remodelado/hipertrofia cronica,,audited,
+Aldosterone,matrix_deposition,1,2,humoral,M-P,physiological,cardiovascular,fibrosis miocardica (locus=miocardio),,audited,
+Noradrenaline,arterial_tone,1,1,wiring,M-P,physiological,cardiovascular,vasoconstriccion alfa1,,audited,
+Noradrenaline,cardiac_chronotropy,1,1,wiring,M-P,physiological,cardiovascular,cronotropia beta1,,audited,
+Noradrenaline,cardiac_inotropy,1,1,wiring,M-P,physiological,cardiovascular,inotropia beta1,,audited,
+Noradrenaline,venous_tone,1,2,wiring,M-P,physiological,cardiovascular,venoconstriccion alfa,,audited,
+Adrenaline,cardiac_chronotropy,1,1,humoral,M-P,physiological,cardiovascular,beta1 (medula adrenal),,audited,
+Adrenaline,cardiac_inotropy,1,1,humoral,M-P,physiological,cardiovascular,beta1 (medula adrenal),,audited,
+Adrenaline,arterial_tone,0,2,humoral,M-P,physiological,cardiovascular,alfa1 vasoconstriccion vs beta2 vasodilatacion segun lecho,,audited,
+Acetylcholine,cardiac_chronotropy,-1,1,wiring,M-P,physiological,cardiovascular,M2 vagal (bradicardia),,audited,
+Acetylcholine,cardiac_conduction,-1,1,wiring,M-P,physiological,cardiovascular,enlentece conduccion AV,,audited,
+Acetylcholine,cardiac_inotropy,-1,2,wiring,M-P,physiological,cardiovascular,M2 auricular,,audited,
+Nitric oxide,arterial_tone,-1,1,humoral,M-P,physiological,cardiovascular,vasodilatacion (cGMP),,audited,
+Endothelin-1,arterial_tone,1,1,humoral,M-P,physiological,cardiovascular,vasoconstriccion (ETA),,audited,
+Vasopressin,arterial_tone,1,2,humoral,M-P,physiological,cardiovascular,V1 vasoconstriccion,,audited,
+ANP,arterial_tone,-1,2,humoral,M-P,physiological,cardiovascular,vasodilatacion,,audited,
+BNP,arterial_tone,-1,2,humoral,M-P,physiological,cardiovascular,vasodilatacion,,audited,
+Bradykinin,arterial_tone,-1,2,humoral,M-P,physiological,cardiovascular,vasodilatacion via NO/prostaciclina,,audited,
+Cortisol,arterial_tone,1,2,humoral,M-P,physiological,cardiovascular,permisivo sobre catecolaminas; efecto mineralocorticoide,,audited,
+T3,cardiac_chronotropy,1,1,humoral,M-P,physiological,cardiovascular,taquicardia tiroidea,,audited,
+T3,cardiac_inotropy,1,1,humoral,M-P,physiological,cardiovascular,inotropia tiroidea,,audited,
+T3,arterial_tone,-1,2,humoral,M-P,physiological,cardiovascular,baja resistencia periferica,,audited,
+Angiotensin II,glomerular_filtration,0,2,humoral,M-P,physiological,renal,constriccion eferente (preserva TFG) vs caida de flujo renal,,audited,
+Noradrenaline,glomerular_filtration,-1,2,wiring,M-P,physiological,renal,vasoconstriccion renal simpatica,,audited,
+ANP,glomerular_filtration,1,2,humoral,M-P,physiological,renal,dilatacion aferente + constriccion eferente,,audited,
+Nitric oxide,glomerular_filtration,1,2,humoral,M-P,physiological,renal,vasodilatacion aferente,,audited,
+Endothelin-1,glomerular_filtration,-1,2,humoral,M-P,physiological,renal,vasoconstriccion renal,,audited,
+Angiotensin II,sodium_excretion,-1,1,humoral,M-P,physiological,renal,reabsorcion proximal de Na+,,audited,
+Aldosterone,sodium_excretion,-1,1,humoral,M-P,physiological,renal,reabsorcion distal de Na+ (ENaC),,audited,
+Cortisol,sodium_excretion,-1,2,humoral,M-P,physiological,renal,efecto mineralocorticoide (modulado por 11b-HSD2),,audited,
+Aldosterone,potassium_excretion,1,1,humoral,M-P,physiological,renal,secrecion distal de K+,,audited,
+ANP,sodium_excretion,1,1,humoral,M-P,physiological,renal,natriuresis,,audited,
+BNP,sodium_excretion,1,2,humoral,M-P,physiological,renal,natriuresis,,audited,
+Vasopressin,water_excretion,-1,1,humoral,M-P,physiological,renal,antidiuresis V2 (acuaporina-2),,audited,
+Aldosterone,urinary_pH,-1,2,humoral,M-P,physiological,renal,secrecion distal de H+ (acidifica orina),,audited,
+Angiotensin II,glomerular_barrier,-1,2,humoral,M-P,physiological,renal,hipertension glomerular -> proteinuria,,audited,
+Angiotensin II,renal_integrity,-1,2,humoral,M-P,physiological,renal,dano por hiperfiltracion/remodelado,,audited,
+Aldosterone,renal_integrity,-1,3,humoral,M-P,physiological,renal,fibrosis/esclerosis renal,,audited,
+Nitric oxide,renal_integrity,1,3,humoral,M-P,physiological,renal,perfusion protectora (debil),,audited,
+Nitric oxide,ureteral_tone,-1,3,humoral,M-P,physiological,renal,relajacion de musculo liso ureteral,,audited,
+Insulin,peripheral_glucose_uptake,1,1,humoral,M-P,physiological,metabolico,captacion GLUT4,,audited,
+Insulin,hepatic_glucose_production,-1,1,humoral,M-P,physiological,metabolico,suprime produccion hepatica,,audited,
+Glucagon,hepatic_glucose_production,1,1,humoral,M-P,physiological,metabolico,glucogenolisis/gluconeogenesis,,audited,
+Cortisol,hepatic_glucose_production,1,1,humoral,M-P,physiological,metabolico,gluconeogenesis,,audited,
+Adrenaline,hepatic_glucose_production,1,1,humoral,M-P,physiological,metabolico,glucogenolisis,,audited,
+GH,hepatic_glucose_production,1,2,humoral,M-P,physiological,metabolico,efecto diabetogeno,,audited,
+T3,hepatic_glucose_production,1,2,humoral,M-P,physiological,metabolico,mayor recambio de glucosa,,audited,
+Cortisol,peripheral_glucose_uptake,-1,2,humoral,M-P,physiological,metabolico,resistencia periferica,,audited,
+Cortisol,insulin_sensitivity,-1,1,humoral,M-P,physiological,metabolico,induce resistencia,,audited,
+GH,insulin_sensitivity,-1,2,humoral,M-P,physiological,metabolico,resistencia,,audited,
+Adiponectin,insulin_sensitivity,1,1,humoral,M-P,physiological,metabolico,mejora sensibilidad,,audited,
+Leptin,insulin_sensitivity,1,2,humoral,M-P,physiological,metabolico,mejora sensibilidad (central),,audited,
+Insulin,plasma_lipids,-1,2,humoral,M-P,physiological,metabolico,aclaramiento/almacenamiento (LPL),,audited,
+Cortisol,plasma_lipids,1,2,humoral,M-P,physiological,metabolico,lipolisis/dislipidemia,,audited,
+T3,plasma_lipids,-1,2,humoral,M-P,physiological,metabolico,aumenta aclaramiento de LDL,,audited,
+HMG-CoA reductase,plasma_lipids,1,1,humoral,M-P,physiological,metabolico,sintesis de colesterol,,audited,
+Adiponectin,plasma_lipids,-1,2,humoral,M-P,physiological,metabolico,mejora perfil lipidico,,audited,
+Insulin,hepatic_lipid_content,1,2,humoral,M-P,physiological,metabolico,lipogenesis de novo,,audited,
+Adiponectin,hepatic_lipid_content,-1,2,humoral,M-P,physiological,metabolico,oxidacion de AG hepatica,,audited,
+Leptin,energy_expenditure,1,2,humoral,M-P,physiological,metabolico,termogenesis,,audited,
+T3,energy_expenditure,1,1,humoral,M-P,physiological,metabolico,TMB/termogenesis,,audited,
+Adrenaline,energy_expenditure,1,2,humoral,M-P,physiological,metabolico,termogenesis beta3,,audited,
+Xanthine oxidase,urate_production,1,1,humoral,M-P,physiological,metabolico,oxidacion de purinas,,audited,
+Acetylcholine,bronchial_tone,1,1,wiring,M-P,physiological,respiratorio,M3 broncoconstriccion (vagal),,audited,
+Adrenaline,bronchial_tone,-1,1,humoral,M-P,physiological,respiratorio,beta2 broncodilatacion,,audited,
+Histamine,bronchial_tone,1,1,humoral,M-P,physiological,respiratorio,H1 broncoconstriccion,,audited,
+Leukotriene B4,bronchial_tone,1,2,humoral,M-P,physiological,respiratorio,leucotrienos -> broncoconstriccion,,audited,
+Nitric oxide,bronchial_tone,-1,2,humoral,M-P,physiological,respiratorio,relajacion NANC,,audited,
+Acetylcholine,mucociliary_clearance,1,3,wiring,M-P,physiological,respiratorio,secrecion mucosa colinergica,,audited,
+Bradykinin,cough_reflex,1,2,humoral,M-P,physiological,respiratorio,sensibiliza aferentes tusigenos,,audited,
+Secretin,bile_flow,1,2,humoral,M-P,physiological,hepatobiliar,coleresis ductal (bicarbonato),,audited,
+CCK,gallbladder_emptying,1,1,humoral,M-P,physiological,hepatobiliar,contraccion vesicular,,audited,
+Acetylcholine,gallbladder_emptying,1,2,wiring,M-P,physiological,hepatobiliar,estimulo vagal,,audited,
+CCK,biliary_tone,-1,2,humoral,M-P,physiological,hepatobiliar,relaja esfinter de Oddi,,audited,
+Nitric oxide,biliary_tone,-1,3,humoral,M-P,physiological,hepatobiliar,relajacion musculo liso biliar,,audited,
+Insulin,hepatic_synthesis,1,2,humoral,M-P,physiological,hepatobiliar,sintesis proteica,,audited,
+Cortisol,hepatic_synthesis,1,3,humoral,M-P,physiological,hepatobiliar,sintesis hepatica (fase aguda/enzimatica),,audited,
+Cortisol,biotransformation,1,2,humoral,M-P,physiological,hepatobiliar,induce CYP,,audited,
+T3,biotransformation,1,3,humoral,M-P,physiological,hepatobiliar,induce enzimas de biotransformacion,,audited,
+Glucagon,ureagenesis,1,2,humoral,M-P,physiological,hepatobiliar,catabolismo proteico -> urea,,audited,
+Cortisol,ureagenesis,1,3,humoral,M-P,physiological,hepatobiliar,catabolismo proteico,,audited,
+Insulin,ureagenesis,-1,3,humoral,M-P,physiological,hepatobiliar,efecto anabolico,,audited,
+Acetylcholine,gastric_secretion,1,1,wiring,M-P,physiological,digestivo,M3 vagal,,audited,
+Histamine,gastric_secretion,1,1,humoral,M-P,physiological,digestivo,H2 (ECL/parietal),,audited,
+Gastrin,gastric_secretion,1,1,humoral,M-P,physiological,digestivo,estimulo de celulas parietales,,audited,
+Somatostatin,gastric_secretion,-1,1,humoral,M-P,physiological,digestivo,inhibe secrecion acida,,audited,
+Secretin,gastric_secretion,-1,2,humoral,M-P,physiological,digestivo,inhibe secrecion acida,,audited,
+Prostaglandin E2,gastric_secretion,-1,2,humoral,M-P,physiological,digestivo,inhibe secrecion acida (EP3),,audited,
+Prostaglandin E2,gastric_mucosal_integrity,1,1,humoral,M-P,physiological,digestivo,citoproteccion (moco/bicarbonato/flujo),,audited,
+Nitric oxide,gastric_mucosal_integrity,1,2,humoral,M-P,physiological,digestivo,flujo mucoso/citoproteccion,,audited,
+Acetylcholine,gi_motility,1,1,wiring,M-P,physiological,digestivo,M3 procinetico,,audited,
+Motilin,gi_motility,1,1,humoral,M-P,physiological,digestivo,complejo motor migratorio,,audited,
+Serotonin,gi_motility,1,2,humoral,M-P,physiological,digestivo,5-HT procinetico,,audited,
+Dopamine,gi_motility,-1,2,humoral,M-P,physiological,digestivo,D2 inhibe,,audited,
+Nitric oxide,gi_motility,-1,2,humoral,M-P,physiological,digestivo,relajacion NANC (receptiva),,audited,
+Secretin,pancreatic_exocrine_secretion,1,1,humoral,M-P,physiological,digestivo,bicarbonato ductal,,audited,
+CCK,pancreatic_exocrine_secretion,1,1,humoral,M-P,physiological,digestivo,enzimas pancreaticas,,audited,
+Acetylcholine,pancreatic_exocrine_secretion,1,2,wiring,M-P,physiological,digestivo,vagal,,audited,
+Leptin,appetite,-1,1,humoral,M-P,physiological,digestivo,anorexigeno,,audited,
+Ghrelin,appetite,1,1,humoral,M-P,physiological,digestivo,orexigeno,,audited,
+CCK,appetite,-1,2,humoral,M-P,physiological,digestivo,saciedad,,audited,
+PYY,appetite,-1,2,humoral,M-P,physiological,digestivo,saciedad,,audited,
+GLP-1,appetite,-1,2,humoral,M-P,physiological,digestivo,saciedad,,audited,
+Insulin,appetite,-1,3,humoral,M-P,physiological,digestivo,saciedad central,,audited,
+alpha-glucosidase,carbohydrate_digestion,1,1,humoral,M-P,physiological,digestivo,hidrolisis de disacaridos (blanco acarbosa),,audited,
+alpha-amylase,carbohydrate_digestion,1,1,humoral,M-P,physiological,digestivo,hidrolisis de almidon,,audited,
+Lipase,lipid_digestion,1,1,humoral,M-P,physiological,digestivo,hidrolisis de TG (blanco orlistat),,audited,
+GLP-2,intestinal_barrier_permeability,-1,2,humoral,M-P,physiological,digestivo,trofismo intestinal (reduce permeabilidad),,audited,
+Acetylcholine,salivation,1,1,wiring,M-P,physiological,digestivo,M3 parasimpatico,,audited,
+Noradrenaline,salivation,1,2,wiring,M-P,physiological,digestivo,simpatico (saliva viscosa),,audited,
+Nrf2,antioxidant_capacity,1,1,humoral,M-P,physiological,redox,programa antioxidante (ARE),,audited,
+ROS,oxidative_damage,1,1,humoral,M-P,physiological,redox,especies reactivas danan lipidos/proteinas,,audited,
+iNOS,oxidative_damage,1,2,humoral,M-P,physiological,redox,NO/peroxinitrito (dano nitrosativo),,audited,
+NF-kB,acute_inflammation,1,1,humoral,M-P,physiological,inflamacion,TF pro-inflamatorio maestro,,audited,
+NF-kB,chronic_inflammation,1,2,humoral,M-P,physiological,inflamacion,inflamacion sostenida,,audited,
+Cortisol,acute_inflammation,-1,1,humoral,M-P,physiological,inflamacion,inhibe NF-kB / induce IL-10,,audited,
+Histamine,acute_inflammation,1,1,humoral,M-P,physiological,inflamacion,permeabilidad vascular/mastocito,,audited,
+Prostaglandin E2,acute_inflammation,1,2,humoral,M-P,physiological,inflamacion,vasodilatacion/dolor,,audited,
+Leukotriene B4,acute_inflammation,1,2,humoral,M-P,physiological,inflamacion,quimiotaxis,,audited,
+Bradykinin,acute_inflammation,1,2,humoral,M-P,physiological,inflamacion,permeabilidad/dolor,,audited,
+Cortisol,immune_effector_activity,-1,1,humoral,M-P,physiological,inflamacion,inmunosupresion,,audited,
+Cortisol,adaptive_immune_activity,-1,1,humoral,M-P,physiological,inflamacion,inmunosupresion,,audited,
+Histamine,allergic_response,1,1,humoral,M-P,physiological,inflamacion,H1,,audited,
+Leukotriene B4,allergic_response,1,2,humoral,M-P,physiological,inflamacion,cisteinil-LT,,audited,
+EPO,erythropoiesis,1,1,humoral,M-P,physiological,hematologico,estimula progenitores eritroides,,audited,
+Testosterone,erythropoiesis,1,2,humoral,M-P,physiological,hematologico,androgenos estimulan eritropoyesis,,audited,
+TPO,thrombopoiesis,1,1,humoral,M-P,physiological,hematologico,estimula megacariocitos,,audited,
+Cortisol,leukopoiesis,1,3,humoral,M-P,physiological,hematologico,neutrofilia por demarginacion,,audited,
+Thrombin,coagulation,1,1,humoral,M-P,physiological,hematologico,fibrinogeno -> fibrina,,audited,
+Estradiol,coagulation,1,2,humoral,M-P,physiological,hematologico,estado procoagulante,,audited,
+Thrombin,platelet_aggregation,1,1,humoral,M-P,physiological,hematologico,activa plaquetas (PAR),,audited,
+Thromboxane,platelet_aggregation,1,1,humoral,M-P,physiological,hematologico,agregante (TP),,audited,
+Prostacyclin,platelet_aggregation,-1,1,humoral,M-P,physiological,hematologico,antiagregante (IP),,audited,
+Nitric oxide,platelet_aggregation,-1,2,humoral,M-P,physiological,hematologico,antiagregante (cGMP),,audited,
+Serotonin,platelet_aggregation,1,2,humoral,M-P,physiological,hematologico,amplifica agregacion,,audited,
+tPA,fibrinolysis,1,1,humoral,M-P,physiological,hematologico,plasminogeno -> plasmina,,audited,
+Hepcidin,iron_status,-1,1,humoral,M-P,physiological,hematologico,bloquea ferroportina (reduce hierro),,audited,
+beta-endorphin,nociception,-1,1,humoral,M-P,physiological,neuroconductual,analgesia opioide,,audited,
+Prostaglandin E2,nociception,1,1,humoral,M-P,physiological,neuroconductual,sensibiliza nociceptores,,audited,
+Bradykinin,nociception,1,2,humoral,M-P,physiological,neuroconductual,activa nociceptores,,audited,
+GABA,nociception,-1,2,wiring,M-P,physiological,neuroconductual,inhibicion espinal,,audited,
+Serotonin,nociception,-1,3,humoral,M-P,physiological,neuroconductual,modulacion descendente,,audited,
+Melatonin,sleep,1,1,humoral,M-P,physiological,neuroconductual,promueve sueno,,audited,
+GABA,sleep,1,1,wiring,M-P,physiological,neuroconductual,hipnotico (GABA-A),,audited,
+Histamine,sleep,-1,2,humoral,M-P,physiological,neuroconductual,vigilia (antihistaminicos sedan),,audited,
+Cortisol,sleep,-1,2,humoral,M-P,physiological,neuroconductual,alerta,,audited,
+Serotonin,affect,1,1,humoral,M-P,physiological,neuroconductual,animo,,audited,
+Dopamine,affect,1,2,wiring,M-P,physiological,neuroconductual,recompensa,,audited,
+Noradrenaline,affect,1,2,wiring,M-P,physiological,neuroconductual,animo/arousal,,audited,
+GABA,anxiety,-1,1,wiring,M-P,physiological,neuroconductual,ansiolitico,,audited,
+Serotonin,anxiety,-1,2,humoral,M-P,physiological,neuroconductual,ansiolitico,,audited,
+Noradrenaline,anxiety,1,2,wiring,M-P,physiological,neuroconductual,arousal,,audited,
+Cortisol,anxiety,1,2,humoral,M-P,physiological,neuroconductual,estres,,audited,
+GABA,seizure_threshold,1,1,wiring,M-P,physiological,neuroconductual,eleva umbral (anticonvulsivo),,audited,
+Glutamate,seizure_threshold,-1,1,wiring,M-P,physiological,neuroconductual,excitatorio baja umbral,,audited,
+Glutamate,neuronal_integrity,-1,1,wiring,M-P,physiological,neuroconductual,excitotoxicidad,,audited,
+BDNF,neuronal_integrity,1,2,humoral,M-P,physiological,neuroconductual,neurotrofico,,audited,
+Acetylcholine,cognition_memory,1,1,wiring,M-P,physiological,neuroconductual,colinergico (anti-Alzheimer),,audited,
+BDNF,cognition_memory,1,2,humoral,M-P,physiological,neuroconductual,plasticidad sinaptica,,audited,
+Cortisol,cognition_memory,-1,2,humoral,M-P,physiological,neuroconductual,estres cronico,,audited,
+Dopamine,locomotor_activity,1,1,wiring,M-P,physiological,neuroconductual,nigroestriatal,,audited,
+PTH,bone_resorption,1,1,humoral,M-P,physiological,musculoesqueletico,moviliza calcio (osteoclastos),,audited,
+Calcitonin,bone_resorption,-1,1,humoral,M-P,physiological,musculoesqueletico,inhibe osteoclastos,,audited,
+Cortisol,bone_resorption,1,2,humoral,M-P,physiological,musculoesqueletico,osteoporosis glucocorticoidea,,audited,
+Estradiol,bone_resorption,-1,1,humoral,M-P,physiological,musculoesqueletico,inhibe resorcion,,audited,
+T3,bone_resorption,1,3,humoral,M-P,physiological,musculoesqueletico,recambio oseo acelerado,,audited,
+Calcitriol,bone_formation,1,2,humoral,M-P,physiological,musculoesqueletico,mineralizacion (absorcion de Ca),,audited,
+Estradiol,bone_formation,1,2,humoral,M-P,physiological,musculoesqueletico,protege hueso,,audited,
+Testosterone,bone_formation,1,2,humoral,M-P,physiological,musculoesqueletico,anabolico oseo,,audited,
+IGF-1,bone_formation,1,2,humoral,M-P,physiological,musculoesqueletico,anabolico,,audited,
+Acetylcholine,skeletal_muscle_tone,1,1,wiring,M-P,physiological,musculoesqueletico,placa motora (NMJ),,audited,
+GABA,skeletal_muscle_tone,-1,2,wiring,M-P,physiological,musculoesqueletico,relajante central (espinal),,audited,
+FSH,spermatogenesis,1,1,humoral,M-P,physiological,reproductivo,celulas de Sertoli,,audited,
+Testosterone,spermatogenesis,1,1,humoral,M-P,physiological,reproductivo,androgeno intratesticular,,audited,
+Estradiol,spermatogenesis,-1,3,humoral,M-P,physiological,reproductivo,exceso suprime el eje,,audited,
+Oxytocin,uterine_tone,1,1,humoral,M-P,physiological,reproductivo,contraccion uterina,,audited,
+Prostaglandin E2,uterine_tone,1,2,humoral,M-P,physiological,reproductivo,contraccion (dismenorrea),,audited,
+Estradiol,uterine_tone,1,2,humoral,M-P,physiological,reproductivo,excitabilidad/receptores de oxitocina,,audited,
+Progesterone,uterine_tone,-1,1,humoral,M-P,physiological,reproductivo,quiescencia uterina,,audited,
+Nitric oxide,uterine_tone,-1,2,humoral,M-P,physiological,reproductivo,tocolitico,,audited,
+Prolactin,lactation,1,1,humoral,M-P,physiological,reproductivo,sintesis de leche,,audited,
+Oxytocin,lactation,1,1,humoral,M-P,physiological,reproductivo,eyeccion de leche,,audited,
+TGF-beta,tissue_repair,1,1,humoral,M-P,physiological,tisular,cicatrizacion/granulacion,,audited,
+IGF-1,tissue_repair,1,2,humoral,M-P,physiological,tisular,anabolico tisular,,audited,
+TGF-beta,matrix_deposition,1,1,humoral,M-P,physiological,tisular,profibrotico maestro,,audited,
+Cortisol,matrix_deposition,-1,2,humoral,M-P,physiological,tisular,inhibe sintesis de colageno,,audited,
+IGF-1,cell_proliferation,1,2,humoral,M-P,physiological,tisular,mitogeno,,audited,
+Estradiol,cell_proliferation,1,2,humoral,M-P,physiological,tisular,proliferacion hormono-dependiente,,audited,
+eNOS,Nitric oxide,1,1,humoral,M-M,physiological,cardiovascular,produccion de NO (§5.5a),,audited,
+Acetylcholine,eNOS,1,1,wiring,M-M,physiological,cardiovascular,M3 endotelial activa eNOS,,audited,
+Bradykinin,eNOS,1,2,humoral,M-M,physiological,cardiovascular,B2 endotelial activa eNOS,,audited,
+Angiotensin II,Vasopressin,1,2,humoral,M-M,physiological,cardiovascular,estimula liberacion de ADH,,audited,
+Angiotensin II,Endothelin-1,1,2,humoral,M-M,physiological,cardiovascular,cross-talk; induce ET-1,,audited,
+Noradrenaline,Renin,1,1,wiring,M-M,physiological,cardiovascular,beta1 yuxtaglomerular -> renina,,audited,
+Adrenaline,Renin,1,2,humoral,M-M,physiological,cardiovascular,beta1 -> renina,,audited,
+ANP,Renin,-1,1,humoral,M-M,physiological,cardiovascular,suprime secrecion de renina,,audited,
+ANP,Aldosterone,-1,2,humoral,M-M,physiological,cardiovascular,suprime aldosterona,,audited,
+ANP,Vasopressin,-1,2,humoral,M-M,physiological,cardiovascular,contrarregula ADH,,audited,
+BNP,Renin,-1,2,humoral,M-M,physiological,cardiovascular,suprime renina,,audited,
+ROS,NF-kB,1,2,humoral,M-M,physiological,redox_inflamacion,redox activa NF-kB,,audited,
+NF-kB,COX-2,1,1,humoral,M-M,physiological,redox_inflamacion,induccion transcripcional,,audited,
+NF-kB,iNOS,1,1,humoral,M-M,physiological,redox_inflamacion,induccion transcripcional,,audited,
+COX-2,Prostaglandin E2,1,1,humoral,M-M,physiological,redox_inflamacion,sintesis de prostaglandinas (blanco AINE),,audited,
+5-LOX,Leukotriene B4,1,1,humoral,M-M,physiological,redox_inflamacion,sintesis de leucotrienos,,audited,
+water_excretion,extracellular_volume,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,excrecion reduce volumen,,audited,
+sodium_excretion,extracellular_volume,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,Na arrastra agua -> volumen,,audited,
+sodium_excretion,serum_sodium,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+chloride_excretion,serum_chloride,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+potassium_excretion,serum_potassium,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+water_excretion,plasma_osmolality,1,1,stock-flow,P-P,physiological,stockflow_aggregation,perdida de agua libre concentra,,audited,
+urate_excretion,serum_urate,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+urate_production,serum_urate,1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+energy_intake,adiposity,1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+energy_expenditure,adiposity,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+hepatic_glucose_production,glycemia,1,1,stock-flow,P-P,physiological,stockflow_aggregation,produccion hepatica eleva glucemia,,audited,
+peripheral_glucose_uptake,glycemia,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,captacion tisular baja glucemia,,audited,
+carbohydrate_digestion,glycemia,1,1,stock-flow,P-P,physiological,stockflow_aggregation,absorcion de glucosa dietaria (via alfa-glucosidasa),,audited,
+appetite,energy_intake,1,1,functional,P-P,physiological,stockflow_aggregation,el impulso de apetito produce la ingesta,,audited,
+bile_flow,lipid_digestion,1,1,functional,P-P,physiological,stockflow_aggregation,la bilis emulsifica -> habilita digestion lipidica,,audited,
+bone_formation,bone_mass,1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+bone_resorption,bone_mass,-1,1,stock-flow,P-P,physiological,stockflow_aggregation,,,audited,
+arterial_tone,blood_pressure,1,1,aggregation,P-P,physiological,stockflow_aggregation,resistencia periferica,,audited,
+venous_tone,blood_pressure,1,1,aggregation,P-P,physiological,stockflow_aggregation,retorno venoso -> GC,,audited,
+cardiac_chronotropy,blood_pressure,1,1,aggregation,P-P,physiological,stockflow_aggregation,GC = FC x VS,,audited,
+cardiac_inotropy,blood_pressure,1,1,aggregation,P-P,physiological,stockflow_aggregation,GC = FC x VS,,audited,
+extracellular_volume,blood_pressure,1,1,aggregation,P-P,physiological,stockflow_aggregation,precarga -> GC,,audited,
+antioxidant_capacity,oxidative_damage,-1,1,functional,P-P,physiological,redox_inflamacion,amortigua ROS,,audited,
+oxidative_damage,acute_inflammation,1,2,functional,P-P,physiological,redox_inflamacion,ROS activa NF-kB,,audited,
+acute_inflammation,oxidative_damage,1,2,functional,P-P,physiological,redox_inflamacion,estallido respiratorio genera ROS,,audited,
+oxidative_damage,hepatocellular_integrity,-1,1,functional,P-P,physiological,redox_inflamacion,el gigante del corpus,,audited,
+oxidative_damage,renal_integrity,-1,1,functional,P-P,physiological,redox_inflamacion,,,audited,
+oxidative_damage,gastric_mucosal_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+oxidative_damage,myocardial_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+oxidative_damage,neuronal_integrity,-1,1,functional,P-P,physiological,redox_inflamacion,,,audited,
+oxidative_damage,arterial_wall_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+oxidative_damage,matrix_deposition,1,2,functional,P-P,physiological,redox_inflamacion,estres oxidativo profibrotico (locus=organo),,audited,
+acute_inflammation,hepatocellular_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+acute_inflammation,gastric_mucosal_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+acute_inflammation,nociception,1,1,functional,P-P,physiological,redox_inflamacion,sensibilizacion inflamatoria,,audited,
+chronic_inflammation,matrix_deposition,1,1,functional,P-P,physiological,redox_inflamacion,inflamacion cronica profibrotica (locus=organo),,audited,
+chronic_inflammation,renal_integrity,-1,2,functional,P-P,physiological,redox_inflamacion,,,audited,
+chronic_inflammation,insulin_sensitivity,-1,2,functional,P-P,physiological,redox_inflamacion,metaflamacion (TNF),,audited,
+oxidative_damage,erythrocyte_integrity,-1,1,functional,P-P,physiological,hemato_neuro,hemolisis oxidativa,,audited,
+iron_status,erythropoiesis,1,1,functional,P-P,physiological,hemato_neuro,hierro como sustrato,,audited,
+erythropoiesis,iron_status,-1,2,functional,P-P,physiological,hemato_neuro,consume hierro,,audited,
+neuronal_integrity,nerve_conduction,1,1,functional,P-P,physiological,hemato_neuro,el dano altera conduccion,,audited,
+neuronal_integrity,cognition_memory,1,2,functional,P-P,physiological,hemato_neuro,dano neuronal -> deterioro cognitivo,,audited,
+cell_proliferation,tumor_burden,1,2,functional,P-P,physiological,tisular,proliferacion sostenida -> carga tumoral (endpoint),,audited,
+parasympathetic,Acetylcholine,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p51,proposed,
+alpha_sympathetic,Noradrenaline,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p51,proposed,
+beta_sympathetic,Adrenaline,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p51,proposed,
+parasympathetic,Serotonin,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p51,proposed,
+alpha_sympathetic,Dopamine,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p51,proposed,
+beta_sympathetic,TRH,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_145; hedayat_p51,proposed,
+alpha_sympathetic,CRH,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_85; hedayat_p55,proposed,
+alpha_sympathetic,ACTH,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_87; hedayat_p55,proposed,
+alpha_sympathetic,Cortisol,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p55,proposed,anatomico-revisar
+alpha_sympathetic,beta_sympathetic,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p55,proposed,
+alpha_sympathetic,TRH,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_145; hedayat_p56,proposed,
+alpha_sympathetic,Melatonin,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p76,proposed,
+parasympathetic,Melatonin,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_p76,proposed,
+parasympathetic,Cortisol,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_97,proposed,
+alpha_sympathetic,GH,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_174,proposed,
+alpha_sympathetic,Prolactin,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_179,proposed,
+parasympathetic,Glucagon,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_187,proposed,
+beta_sympathetic,Glucagon,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_187,proposed,
+beta_sympathetic,Insulin,1,3,wiring,M-M,endobiogenic,endobiogenic_tier1,tono autonomico -> eje,hedayat_189,proposed,
+CRH,GnRH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_11,proposed,
+ACTH,GnRH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_11,proposed,
+ACTH,FSH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_12,proposed,
+Cortisol,FSH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_12,proposed,
+ACTH,LH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_14,proposed,
+Cortisol,LH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_14,proposed,
+GnRH,TRH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+FSH,TRH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+FSH,TSH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+Estradiol,TSH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+LH,TSH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+Progesterone,TSH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_15,proposed,
+TRH,GHRH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+TSH,GHRH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+TSH,GH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+T4,GH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+ACTH,GH,1,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+Cortisol,GH,0,3,humoral,M-M,endobiogenic,endobiogenic_tier1,acoplamiento de eje (modulatorio),hedayat2_18,proposed,
+Cortisol,calm_alertness,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_100,proposed,
+Cortisol,focus,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_100,proposed,
+DHEA,creativity,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_110,proposed,
+DHEA,irritability,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_110,proposed,
+DHEA,resilience,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_110,proposed,
+DHEA,adaptation_to_stress,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_110,proposed,
+Aldosterone,central_adaptation_response,-1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_114,proposed,
+Angiotensin II,salt_craving,1,3,humoral,M-P,endobiogenic,endobiogenic_tier1,hormona -> proceso de terreno,hedayat_114,proposed,
+ACE,Angiotensin II,1,1,humoral,M-M,physiological,reconnect,convierte AngI->AngII (blanco IECA),,audited,isla ACE
+ACE,Bradykinin,-1,1,humoral,M-M,physiological,reconnect,degrada bradicinina (kininasa II),,audited,isla ACE
+5-alpha-reductase,DHT,1,1,humoral,M-M,physiological,reconnect,T->DHT (blanco saw palmetto),,audited,isla 5aR
+11b-HSD2,sodium_excretion,1,2,humoral,M-P,physiological,reconnect,inactiva cortisol local; regaliz la inhibe->retencion Na,,audited,isla 11bHSD2
+Xanthine oxidase,oxidative_damage,1,2,humoral,M-P,physiological,reconnect,XO genera ROS (§5.5b),,audited,conecta urato->redox
+serum_urate,acute_inflammation,1,2,functional,P-P,physiological,reconnect,cristales de urato -> gota/inflamacion,,audited,conecta urato->inflam
+intestinal_barrier_permeability,acute_inflammation,1,2,functional,P-P,physiological,reconnect,gut leaky -> inflamacion sistemica,,audited,isla GLP2/barrera
+thrombopoiesis,platelet_aggregation,1,2,functional,P-P,physiological,reconnect,mas plaquetas -> capacidad de agregacion,,audited,isla TPO
+chronic_inflammation,thrombopoiesis,1,2,functional,P-P,physiological,reconnect,trombocitosis reactiva,,audited,isla TPO
+fibrinolysis,coagulation,-1,1,functional,P-P,physiological,reconnect,fibrinolisis se opone al coagulo,,audited,isla tPA
+Aldosterone,chloride_excretion,-1,2,humoral,M-P,physiological,reconnect,Cl sigue al Na (reabsorcion),,audited,isla cloruro
+Acetylcholine,sweating,1,1,wiring,M-P,physiological,reconnect,sudomotor colinergico,,audited,orfano sweating
+sweating,body_temperature_setpoint,-1,1,functional,P-P,physiological,reconnect,enfriamiento evaporativo,,audited,orfano temp
+Prostaglandin E2,body_temperature_setpoint,1,1,humoral,M-P,physiological,reconnect,pirogeno (fiebre),,audited,orfano temp
+T3,body_temperature_setpoint,1,2,humoral,M-P,physiological,reconnect,termogenesis tiroidea,,audited,orfano temp
+Histamine,capillary_resistance,-1,1,humoral,M-P,physiological,reconnect,aumenta permeabilidad capilar,,audited,orfano capilar
+acute_inflammation,capillary_resistance,-1,1,functional,P-P,physiological,reconnect,inflamacion aumenta permeabilidad,,audited,orfano capilar
+ureagenesis,nitrogenous_waste_excretion,1,1,functional,P-P,physiological,reconnect,urea -> excrecion de N,,audited,orfano N
+glomerular_filtration,nitrogenous_waste_excretion,1,1,functional,P-P,physiological,reconnect,filtracion arrastra N,,audited,orfano N
+acid_base_status,serum_potassium,1,2,functional,P-P,physiological,reconnect,acidosis -> hiperkalemia (shift),,audited,orfano acido-base
+immune_effector_activity,microbial_load,-1,1,functional,M-P,physiological,reconnect,inmunidad reduce carga microbiana,,audited,endpoint microbiano
