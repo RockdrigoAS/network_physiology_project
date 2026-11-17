@@ -1,13 +1,13 @@
 '''
-Inference machine that operates on network G from network.py
-It has 3 modes:
--forward
--abductive
--compensate
-Rules:
--grade
--sign
--edges type "aggregation"
+inference.py: inference algorithm that operates over the regulatory network G (from network.py)
+G is a signed, directed graph: nodes are biomolecules (M) or physiological processes (P); each edge carries a sign, 
+an evidence grade and channel type.
+Modes:
+-forward: perturb an M node; return the best signed path to each reachable target.
+-abductive: from a peripheral observation, trace upstream to its candidate regulators (main mode given evidence from systematic review). 
+-footprint: from a set of pertubation of each plant, integrate their signed path acroos the network (M sources forward, P sources abductive).
+-metrics: structural exploration (centrality, connectivity, communities, feedback loops).
+
 '''
 
 
@@ -133,6 +133,8 @@ def metrics(G):
     bt_c = sorted(bt_c.items(), key=lambda kv : kv[1], reverse=True)
     n_in = sorted(G.in_degree(), key=lambda kv : kv[1], reverse=True)
     n_out = sorted(G.out_degree(), key=lambda kv : kv[1], reverse=True)
+    comm = nx.community.louvain_communities(G.to_undirected(), seed=0)
+    n_comm = len(comm)
     scc = list(nx.strongly_connected_components(G))
     n_scc = nx.number_strongly_connected_components(G)
     wcc = list(nx.weakly_connected_components(G))
@@ -146,6 +148,7 @@ def metrics(G):
     print(f"Top betweenness: {bt_c[:10]}")
     print(f"Top nodes degree in: {n_in[:10]}")
     print(f"Top nodes degree out: {n_out[:10]}")
+    print(f"Number of communities: {n_comm}; communities: {comm}")
     # print(f"Connected components: {scc}, NCC {n_scc} ")
     print(f"loops{loops}")
     print(f"islands{islands}")
